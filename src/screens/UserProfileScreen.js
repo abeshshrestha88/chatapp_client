@@ -47,19 +47,6 @@ const UserProfileScreen = ({
   const [datePickerVis, setDatePickerVis] = useState(false);
   const [formError, setFormError] = useState({});
 
-  useEffect(() => {
-    (async () => {
-      if (Platform.OS !== "web") {
-        const {
-          status,
-        } = await ImagePicker.requestCameraRollPermissionsAsync();
-        if (status !== "granted") {
-          alert("Sorry, we need camera roll permissions to make this work!");
-        }
-      }
-    })();
-  }, []);
-
   const handleEmailChange = (email) => {
     setEmailAction(email);
   };
@@ -142,22 +129,34 @@ const UserProfileScreen = ({
   };
 
   const handleChangeProfilePicture = async () => {
-    // console.log("####inside handle change####");
+    if (Platform.OS === "android") {
+      let permissionResult = await ImagePicker.requestCameraRollPermissionsAsync();
 
-    // launchImageLibrary({ mediaType }, callback);
+      if (permissionResult.granted === false) {
+        alert("Permission to access camera roll is required!");
+        return;
+      }
 
-    let result = await ImagePicker.launchImageLibraryAsync({
-      mediaTypes: ImagePicker.MediaTypeOptions.Images,
-      allowsEditing: true,
-      aspect: [4, 3],
-      quality: 1,
-    });
+      let pickerResult = await ImagePicker.launchImageLibraryAsync();
 
-    console.log("image result after picking is", result);
+      if (pickerResult.cancelled === true) {
+        return;
+      }
 
-    if (!result.cancelled) {
-      console.log("image after picking is", result.uri);
-      setImageAction(result.uri);
+      if (!pickerResult.cancelled) {
+        setImageAction(pickerResult.uri);
+      }
+    } else {
+      let result = await ImagePicker.launchImageLibraryAsync({
+        mediaTypes: ImagePicker.MediaTypeOptions.Images,
+        allowsEditing: true,
+        aspect: [4, 3],
+        quality: 1,
+      });
+      if (!result.cancelled) {
+        console.log("image after picking is", result.uri);
+        setImageAction(result.uri);
+      }
     }
   };
 

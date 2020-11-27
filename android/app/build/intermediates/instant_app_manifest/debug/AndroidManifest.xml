@@ -114,6 +114,15 @@
             android:value="org.unimodules.adapters.react.apploader.RNHeadlessAppLoader" />
 
         <provider
+            android:name="com.imagepicker.FileProvider"
+            android:authorities="com.chatapp.chatfrontend.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <provider
             android:name="expo.modules.filesystem.FileSystemFileProvider"
             android:authorities="com.chatapp.chatfrontend.FileSystemFileProvider"
             android:exported="false"
