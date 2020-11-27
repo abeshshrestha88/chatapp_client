@@ -103,6 +103,8 @@ const groupMessageScreen = ({
       onSend={(messages) => onSend(messages)}
       user={{
         _id: currentUserId,
+        avatar: "https://placeimg.com/140/140/any",
+        name: "bcd",
       }}
     />
   );

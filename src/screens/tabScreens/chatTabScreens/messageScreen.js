@@ -45,6 +45,11 @@ const messageScreen = ({
     //ExponentPushToken[lcJiMgKNBF7UzclZK_vmhA]
     //ExponentPushToken[2YVMhZN4c9yDuaAC3ihPG1]
 
+    console.log("new msg is", newMessage);
+
+    // newMessage[0].user.avatar = "https://placeimg.com/140/140/any";
+    // newMessage[0].user.name = "random user";
+
     newMessage[0].conversation_id = route.params.conversationId;
 
     socket.emit(
@@ -72,6 +77,8 @@ const messageScreen = ({
       onSend={(messages) => onSend(messages)}
       user={{
         _id: currentUserId,
+        avatar: "https://placeimg.com/140/140/any",
+        name: "bcd",
       }}
     />
   );

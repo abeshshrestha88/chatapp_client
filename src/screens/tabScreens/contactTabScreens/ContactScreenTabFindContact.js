@@ -40,18 +40,32 @@ const ContactScreenTabFindContact = ({
     const countryCode = countryDetails.phonecode;
 
     try {
+      console.log("before calling api!!!!");
       const res = await ApiServer.post("/api/contacts/find", {
         phoneNumber,
         userId,
         countryCode,
       });
 
+      console.log("after calling api!!!!");
+
+      console.log("res data is", res);
+
       if (res.data.success) {
         navigation.navigate("Add Contact", {
           userProfile: res.data.userProfile,
         });
       }
-    } catch (error) {}
+    } catch (error) {
+      if (error.response.status === 404) {
+        console.log("user not found");
+        alert("user not found");
+      } else {
+        alert("Server error, please try again");
+      }
+
+      console.log(error.response.status);
+    }
   };
 
   const handlePhonechange = (phoneNumber) => {
