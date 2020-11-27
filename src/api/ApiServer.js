@@ -1,8 +1,9 @@
 import axios from "axios";
 
 import env from "../../environmentVariable";
-const {envBaseURL} = env;
+const { envBaseURL } = env;
 
+console.log("base url is", envBaseURL);
 
 export default axios.create({
   baseURL: envBaseURL,

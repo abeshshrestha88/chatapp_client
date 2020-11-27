@@ -31,6 +31,7 @@ import { getConversationIdAction } from "../../redux/actions/conversationAction"
 import { FontAwesome5 } from "@expo/vector-icons";
 
 import { AddContactsToGroup } from "../../redux/actions/contactsAction";
+import { clearGroupMessagesAction } from "../../redux/actions/groupMessageAction";
 
 const AddGroup = ({
   route,
@@ -41,6 +42,7 @@ const AddGroup = ({
   filterContactList,
   getMessagesAction,
   clearMessagesAction,
+  clearGroupMessagesAction,
 }) => {
   const [addScreenModelVisible, setAddScreenModelVisible] = useState(false);
 
@@ -248,6 +250,9 @@ const AddGroup = ({
   const handleDone = async () => {
     const id = await AddContactsToGroup(currentUserId, groupList);
     console.log("id in handle done is", id);
+
+    clearGroupMessagesAction();
+
     navigation.navigate("GroupMessageScreen", { groupId: id });
   };
 
@@ -281,6 +286,7 @@ const mapDispatchToProps = {
   filterContactList: filterContactList,
   getMessagesAction: getMessagesAction,
   clearMessagesAction: clearMessagesAction,
+  clearGroupMessagesAction,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(AddGroup);

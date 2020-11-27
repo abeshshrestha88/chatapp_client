@@ -8,13 +8,17 @@
 import { groupMessageTypes } from "../types/types";
 const {
   RECEIVE_GROUP_MSG_FROM_SERVER,
+  GET_GROUP_FROM_SERVER,
   GET_GROUP_MSG_FROM_SERVER,
+  CLEAR_GROUP_MESSAGE,
 } = groupMessageTypes;
 
 import ApiServer from "../../api/ApiServer";
 
 export const receiveMessagesAction = (data) => {
   console.log("socket msg received in action", data);
+
+  console.log("######user is#######", data.user);
 
   return { type: RECEIVE_GROUP_MSG_FROM_SERVER, payload: data.message[0] };
 };
@@ -36,11 +40,44 @@ export const getGroupConversationAction = (userId) => {
       );
 
       dispatch({
-        type: GET_GROUP_MSG_FROM_SERVER,
+        type: GET_GROUP_FROM_SERVER,
         payload: res.data.groupConversationList,
       });
     } catch (error) {}
   };
+};
+
+export const getGroupMessagesAction = (groupId) => {
+  console.log("inside action.....");
+  return async (dispatch) => {
+    try {
+      const res = await ApiServer.get("/api/group-messages/get-messages", {
+        params: { groupId },
+      });
+
+      console.log(res);
+
+      if (res.data.success) {
+        console.log(
+          "group msg received inside action is",
+          res.data.groupMessages
+        );
+
+        dispatch({
+          type: GET_GROUP_MSG_FROM_SERVER,
+          payload: res.data.groupMessages,
+        });
+      } else {
+      }
+    } catch (error) {
+      console.log("error:");
+      console.log(error);
+    }
+  };
+};
+
+export const clearGroupMessagesAction = () => {
+  return { type: CLEAR_GROUP_MESSAGE };
 };
 
 // export const sendMessage = (message) => {

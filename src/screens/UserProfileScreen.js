@@ -12,6 +12,7 @@ import {
 import { connect } from "react-redux";
 import moment from "moment";
 import ApiServer from "../api/ApiServer";
+import * as Permissions from "expo-permissions";
 import {
   setUserProfileAction,
   setNameAction,
@@ -45,6 +46,19 @@ const UserProfileScreen = ({
 }) => {
   const [datePickerVis, setDatePickerVis] = useState(false);
   const [formError, setFormError] = useState({});
+
+  useEffect(() => {
+    (async () => {
+      if (Platform.OS !== "web") {
+        const {
+          status,
+        } = await ImagePicker.requestCameraRollPermissionsAsync();
+        if (status !== "granted") {
+          alert("Sorry, we need camera roll permissions to make this work!");
+        }
+      }
+    })();
+  }, []);
 
   const handleEmailChange = (email) => {
     setEmailAction(email);
@@ -128,14 +142,21 @@ const UserProfileScreen = ({
   };
 
   const handleChangeProfilePicture = async () => {
+    // console.log("####inside handle change####");
+
+    // launchImageLibrary({ mediaType }, callback);
+
     let result = await ImagePicker.launchImageLibraryAsync({
-      mediaTypes: ImagePicker.MediaTypeOptions.All,
+      mediaTypes: ImagePicker.MediaTypeOptions.Images,
       allowsEditing: true,
       aspect: [4, 3],
       quality: 1,
     });
 
+    console.log("image result after picking is", result);
+
     if (!result.cancelled) {
+      console.log("image after picking is", result.uri);
       setImageAction(result.uri);
     }
   };

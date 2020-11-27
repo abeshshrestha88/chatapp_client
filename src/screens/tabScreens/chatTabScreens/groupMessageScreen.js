@@ -23,10 +23,12 @@ const groupMessageScreen = ({
   // setNotificationConversationIdAction,
 }) => {
   useEffect(() => {
+    console.log("inside gorup msg screen");
     console.log("hi");
     console.log("group id is: ", route.params.groupId);
 
     socket.on("newGroupMessage", (data) => {
+      console.log("before calling action", data);
       receiveMessagesAction(data);
     });
 
@@ -37,6 +39,8 @@ const groupMessageScreen = ({
     // console.log("conversation param id is: ", route.params.conversationId);
     // setNotificationConversationIdAction(route.params.conversationId);
     return () => {
+      socket.off("newGroupMessage");
+
       socket.emit("leaveGroup", {
         groupId: route.params.groupId,
       });
@@ -56,9 +60,13 @@ const groupMessageScreen = ({
   // console.log(expoPushToken);
 
   function onSend(newMessage = []) {
+    console.log("new msg is: ", newMessage);
+    console.log("group id in route is", route.params.groupId);
+
     socket.emit("groupMessage", {
       message: newMessage,
       to: route.params.groupId,
+      userId: currentUserId,
     });
     // sendPushNotification({
     //   to: notification_token,
@@ -101,7 +109,7 @@ const groupMessageScreen = ({
 };
 
 const mapStateToProps = (state) => ({
-  messages: state.groupMessagesReducer.messages,
+  messages: state.groupMessagesReducer.group_messages,
   // newMessage: state.messagesReducer.newMessage,
   // name: state.userProfileReducer.name,
   currentUserId: state.authReducer.userId,

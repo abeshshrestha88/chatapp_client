@@ -140,6 +140,7 @@ const SignUpScreen = ({
               <TextInput
                 style={styles.textInput}
                 placeholder="Phone number"
+                keyboardType="numeric"
                 value={phoneNumber}
                 onChangeText={(text) => handleNumberChange(text)}
               ></TextInput>

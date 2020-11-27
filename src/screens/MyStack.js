@@ -27,49 +27,49 @@ const MyStack = ({
   resetPushNotificationConversationAction,
 }) => {
   const navigationScreen = () => {
-    const handleAppStateChange = async () => {
-      console.log("inside handle change");
+    // const handleAppStateChange = async () => {
+    //   console.log("inside handle change");
 
-      // if (AppState.currentState == "active") {
-      //   console.log("stae is active");
+    // if (AppState.currentState == "active") {
+    //   console.log("stae is active");
 
-      //   try {
-      //     console.log("before api call");
-      //     console.log(userId);
-      //     const res = await ApiServer.post("/api/user-profile/status", {
-      //       isOnline: true,
-      //       userId: userId,
-      //     });
-      //   } catch (error) {
-      //     console.log("contacts list error calling api");
-      //     console.log(error);
-      //   }
-      // } else {
-      //   console.log("state is inactive");
-      //   try {
-      //     const res = await ApiServer.post("/api/user-profile/status", {
-      //       isOnline: false,
-      //       userId: userId,
-      //     });
-      //   } catch (error) {
-      //     console.log("contacts list error calling api");
-      //     console.log(error);
-      //   }
-      // }
-    };
+    //   try {
+    //     console.log("before api call");
+    //     console.log(userId);
+    //     const res = await ApiServer.post("/api/user-profile/status", {
+    //       isOnline: true,
+    //       userId: userId,
+    //     });
+    //   } catch (error) {
+    //     console.log("contacts list error calling api");
+    //     console.log(error);
+    //   }
+    // } else {
+    //   console.log("state is inactive");
+    //   try {
+    //     const res = await ApiServer.post("/api/user-profile/status", {
+    //       isOnline: false,
+    //       userId: userId,
+    //     });
+    //   } catch (error) {
+    //     console.log("contacts list error calling api");
+    //     console.log(error);
+    //   }
+    // }
+    // };
 
-    useEffect(() => {
-      console.log("user effect calle din stack");
+    // useEffect(() => {
+    //   console.log("user effect calle din stack");
 
-      if (userId) {
-        handleAppStateChange();
-        AppState.addEventListener("change", handleAppStateChange);
-      }
+    //   if (userId) {
+    //     handleAppStateChange();
+    //     AppState.addEventListener("change", handleAppStateChange);
+    //   }
 
-      return () => {
-        AppState.removeEventListener("change", handleAppStateChange);
-      };
-    }, [userId]);
+    //   return () => {
+    //     AppState.removeEventListener("change", handleAppStateChange);
+    //   };
+    // }, [userId]);
 
     if (isLoading) {
       return (

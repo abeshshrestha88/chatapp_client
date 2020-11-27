@@ -117,12 +117,16 @@ export const requestVerificationCodeApiCall = async (
   countryCode
 ) => {
   try {
+    // console.log(ApiServer);
+
     await ApiServer.post("/api/auth/register", {
       phoneNumber: phoneNumber.toString(),
       countryCode: countryCode.toString(),
     });
+
+    console.log("registration api called######");
   } catch (error) {
-    console.log(error);
+    console.log(error.message);
   }
 };
 

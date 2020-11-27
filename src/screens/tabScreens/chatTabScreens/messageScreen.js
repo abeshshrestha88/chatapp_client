@@ -21,7 +21,7 @@ const messageScreen = ({
   useEffect(() => {
     console.log("conversation param id is: ", route.params.conversationId);
 
-    setNotificationConversationIdAction(route.params.conversationId);
+    // setNotificationConversationIdAction(route.params.conversationId);
   }, []);
 
   const conversationId = route.params.conversationId;
@@ -29,19 +29,19 @@ const messageScreen = ({
 
   const contact = route.params.contact;
   const currentUserId = route.params.currentUserId;
-  const notification_token = route.params.notification_token;
+  // const notification_token = route.params.notification_token;
 
   // console.log("token in send is");
   // console.log(expoPushToken);
 
   function onSend(newMessage = []) {
-    sendPushNotification({
-      to: notification_token,
-      sound: "default",
-      title: name,
-      body: newMessage[0].text,
-      data: JSON.stringify({ conversationId: conversationId }),
-    });
+    // sendPushNotification({
+    //   to: notification_token,
+    //   sound: "default",
+    //   title: name,
+    //   body: newMessage[0].text,
+    //   data: JSON.stringify({ conversationId: conversationId }),
+    // });
     //ExponentPushToken[lcJiMgKNBF7UzclZK_vmhA]
     //ExponentPushToken[2YVMhZN4c9yDuaAC3ihPG1]
 

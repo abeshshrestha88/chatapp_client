@@ -14,10 +14,11 @@ import { connect } from "react-redux";
 import Search from "../../components/Search";
 import { getGroupConversationAction } from "../../../redux/actions/groupMessageAction";
 import {
-  getMessagesAction,
+  getGroupMessagesAction,
   clearMessagesAction,
-} from "../../../redux/actions/messageAction";
+} from "../../../redux/actions/groupMessageAction";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
 
 const GroupConversationScreen = ({
   getGroupConversationAction,
@@ -29,7 +30,7 @@ const GroupConversationScreen = ({
   phoneNumber,
   dob,
   email,
-  getMessagesAction,
+  getGroupMessagesAction,
   clearMessagesAction,
   groupConversationList,
   messages,
@@ -90,32 +91,30 @@ const GroupConversationScreen = ({
     console.log("search recent conversation btn clicked...");
   };
 
-  const handleConversationSelection = (item) => {
+  const handleGroupConversationSelection = (item) => {
     console.log("item in handle conversation is....", item);
-    console.log(
-      "token after clicking conversation is:",
-      item.notification_token
-    );
 
     const contactObject = {};
 
-    contactObject.contactId = item.contact_id;
-    contactObject.country_code = item.country_code;
-    contactObject.dob = item.dob;
-    contactObject.email = item.email;
-    contactObject.name = item.name;
-    contactObject.phone_number = item.phone_number;
-    contactObject.profile_img_url = item.profile_img_url;
+    // contactObject.contactId = item.contact_id;
+    // contactObject.country_code = item.country_code;
+    // contactObject.dob = item.dob;
+    // contactObject.email = item.email;
+    // contactObject.name = item.name;
+    // contactObject.phone_number = item.phone_number;
+    // contactObject.profile_img_url = item.profile_img_url;
 
-    clearMessagesAction();
-    getMessagesAction(userId, item.contact_id);
-    navigation.navigate("MessageScreen", {
+    // clearMessagesAction();
+    getGroupMessagesAction(item.id);
+    // getGroupMessagesAction(userId, item.contact_id);
+    navigation.navigate("GroupMessageScreen", {
       currentUserId: userId,
       contact: contactObject,
       conversationId: item.conversation_id,
-      name: item.name.split(" ")[0],
+      name: item.name,
       image: item.profile_img_url,
       notification_token: item.notification_token,
+      groupId: item.id,
     });
   };
 
@@ -181,50 +180,55 @@ const GroupConversationScreen = ({
     return msg;
   };
 
+  const renderGroupImage = (picture) => {
+    return picture ? (
+      <Image
+        style={styles.picture}
+        source={{
+          uri: picture,
+        }}
+      />
+    ) : (
+      <View style={styles.image}>
+        <MaterialCommunityIcons name="account-group" style={styles.groupIcon} />
+      </View>
+    );
+  };
+
   const flastListJSX = () => {
     if (groupConversationList.length > 0) {
       if (localGroupConversationList.length > 0) {
         return (
-          <FlatList
-            data={localGroupConversationList}
-            // data={conversationList}
-            keyExtractor={(item) => item.id.toString()}
-            renderItem={({ item }) => (
-              <TouchableOpacity
-                onPress={() => {
-                  handleConversationSelection(item);
-                }}
-              >
-                <View style={styles.contactRow}>
-                  <View style={styles.image}>
-                    <MaterialCommunityIcons
-                      name="account-group"
-                      style={styles.groupIcon}
-                    />
-                    {/* <Image
-                      style={styles.profileLogo}
-                      source={{ uri: item.profile_img_url }}
-                    /> */}
+          <>
+            {/* <Text>{JSON.stringify(localGroupConversationList, null, 4)}</Text> */}
+
+            <FlatList
+              data={localGroupConversationList}
+              // data={conversationList}
+              keyExtractor={(item) => item.id.toString()}
+              renderItem={({ item }) => (
+                <TouchableOpacity
+                  onPress={() => {
+                    handleGroupConversationSelection(item);
+                  }}
+                >
+                  <View style={styles.contactRow}>
+                    {renderGroupImage(item.picture)}
+
+                    <View style={styles.label}>
+                      {item.name && (
+                        <Text style={styles.msg_name}>{item.name}</Text>
+                      )}
+                    </View>
                   </View>
-                  <View style={styles.label}>
-                    {/* <Text style={styles.msg_name}>{item.name}</Text> */}
-                    {/* <Text>{getDateTime(item.createdat)}</Text> */}
-                    {/* <Text style={styles.msg_text}>
-                      {`${renderMsg(item.msg, item.contact_id)} - ${getDateTime(
-                        item.createdat
-                      )}`}
-                    </Text> */}
-                  </View>
-                </View>
-              </TouchableOpacity>
-            )}
-          />
+                </TouchableOpacity>
+              )}
+            />
+          </>
         );
       } else {
         return (
-          <Text style={styles.noContacts}>
-            No conversation found for {keyTyped}
-          </Text>
+          <Text style={styles.noContacts}>No Groups found for {keyTyped}</Text>
         );
       }
     }
@@ -257,7 +261,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = {
   getGroupConversationAction,
-  getMessagesAction,
+  getGroupMessagesAction,
   clearMessagesAction,
 };
 
@@ -288,11 +292,23 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     paddingVertical: 5,
   },
+
+  label: {
+    // borderWidth: 2,
+    flex: 1,
+    marginTop: 20,
+  },
   image: {
     marginRight: 15,
-    padding: 20,
+    padding: 14,
     backgroundColor: "#e4e4e4",
     borderRadius: 50,
+  },
+  picture: {
+    width: 70,
+    height: 70,
+    borderRadius: 50,
+    marginRight: 15,
   },
 
   profileLogo: {
