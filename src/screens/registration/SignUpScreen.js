@@ -46,6 +46,11 @@ const SignUpScreen = ({
   );
   const [submitButtonVisible, setSubmitButtonVisible] = useState(false);
   const [cellularDetectCountry, setcellularDetectCountry] = useState("");
+  const [btnDisabled, setBtnDisabled] = useState(true);
+
+  useEffect(() => {
+    phoneNumber.length > 0 ? setBtnDisabled(false) : setBtnDisabled(true);
+  }, [phoneNumber]);
 
   useEffect(() => {
     (async () => {
@@ -148,10 +153,19 @@ const SignUpScreen = ({
           </View>
 
           <TouchableOpacity
-            style={styles.submitButton}
+            style={
+              btnDisabled ? styles.submitButtonDisabled : styles.submitButton
+            }
             onPress={showConfirmationMsg}
+            disabled={btnDisabled}
           >
-            <Text style={styles.submitText}>Continue</Text>
+            <Text
+              style={
+                btnDisabled ? styles.submitTextDisabled : styles.submitText
+              }
+            >
+              Continue
+            </Text>
           </TouchableOpacity>
 
           <CountryListModel
@@ -266,9 +280,24 @@ const styles = StyleSheet.create({
     width: "50%",
     alignSelf: "center",
   },
+  submitButtonDisabled: {
+    backgroundColor: "#C6C6C6",
+    paddingVertical: 10,
+    borderRadius: 50,
+    marginTop: 35,
+    width: "50%",
+    alignSelf: "center",
+  },
   submitText: {
     textAlign: "center",
     fontSize: 18,
+    fontWeight: "bold",
     color: "#ffffff",
+  },
+  submitTextDisabled: {
+    textAlign: "center",
+    fontSize: 18,
+    fontWeight: "bold",
+    color: "#7F7F7F",
   },
 });

@@ -117,6 +117,7 @@ export const requestVerificationCodeApiCall = async (
   countryCode
 ) => {
   try {
+    console.log("api called sms resnt....");
     // console.log(ApiServer);
 
     await ApiServer.post("/api/auth/register", {

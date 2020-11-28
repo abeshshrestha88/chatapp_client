@@ -75,10 +75,10 @@ const messageScreen = ({
     <GiftedChat
       messages={messages}
       onSend={(messages) => onSend(messages)}
+      renderUsernameOnMessage
       user={{
         _id: currentUserId,
-        avatar: "https://placeimg.com/140/140/any",
-        name: "bcd",
+        name: name,
       }}
     />
   );
