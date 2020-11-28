@@ -9,7 +9,10 @@ import {
 } from "react-native";
 
 import { connect } from "react-redux";
-import { validateVerificationCodeApiCall } from "../../redux/actions/authAction";
+import {
+  validateVerificationCodeApiCall,
+  clearErrorMsg,
+} from "../../redux/actions/authAction";
 // import { registerForPushNotificationsAsync } from "../../helpers/functions";
 import Constants from "expo-constants";
 import * as Permissions from "expo-permissions";
@@ -22,6 +25,8 @@ const VerifyCodeScreen = ({
   phoneNumber,
   validateVerificationCodeApiCall,
   isAuthenticated,
+  errorMessage,
+  clearErrorMsg,
 }) => {
   const [verificationCode, setVerificationCode] = useState("");
   const [btnDisabled, setBtnDisabled] = useState(true);
@@ -63,6 +68,15 @@ const VerifyCodeScreen = ({
     setTimer(1000);
   }, []);
 
+  useEffect(() => {
+    console.log("error msg in use effec is");
+    if (errorMessage) {
+      alert(errorMessage);
+    }
+
+    clearErrorMsg();
+  }, [errorMessage]);
+
   /* change */
   // const [expoPushToken, setExpoPushToken] = useState("");
   // const [expoPushToken, setExpoPushToken] = useState("q123123");
@@ -86,14 +100,14 @@ const VerifyCodeScreen = ({
   const handleVerificationSubmit = () => {
     console.log("handle verfiy clicked...");
 
-    // const countryCode = selectedCountry.phonecode;
+    const countryCode = selectedCountry.phonecode;
 
-    // validateVerificationCodeApiCall(
-    //   verificationCode,
-    //   phoneNumber,
-    //   countryCode,
-    //   selectedCountry
-    // );
+    validateVerificationCodeApiCall(
+      verificationCode,
+      phoneNumber,
+      countryCode,
+      selectedCountry
+    );
   };
 
   // if (isAuthenticated) {
@@ -177,11 +191,13 @@ mapStateToProps = (state) => {
     selectedCountry: state.countriesCodes.selectedCountry,
     phoneNumber: state.countriesCodes.phoneNumber,
     isAuthenticated: state.authReducer.isAuthenticated,
+    errorMessage: state.authReducer.errorMessage,
   };
 };
 
 export default connect(mapStateToProps, {
   validateVerificationCodeApiCall: validateVerificationCodeApiCall,
+  clearErrorMsg,
 })(VerifyCodeScreen);
 
 const styles = StyleSheet.create({

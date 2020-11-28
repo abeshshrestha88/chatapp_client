@@ -1,6 +1,7 @@
 import {
   AUTH_LOG_IN,
   AUTH_LOG_IN_ERROR,
+  CLEAR_AUTH_LOG_IN_ERROR,
   SET_TOKEN_ON_APP_START,
   SIGN_OUT,
 } from "../types/types";
@@ -29,7 +30,12 @@ const authReducer = (
       };
 
     case AUTH_LOG_IN_ERROR:
+      console.log("inside reducer error");
+      console.log("payload is", action.payload);
       return { ...state, errorMessage: action.payload };
+
+    case CLEAR_AUTH_LOG_IN_ERROR:
+      return { ...state, errorMessage: "" };
 
     case SIGN_OUT:
       console.log("singout reducer called");

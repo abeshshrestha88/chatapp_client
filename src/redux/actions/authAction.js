@@ -4,6 +4,7 @@ import {
   SET_PHONE_NUMBER,
   AUTH_LOG_IN,
   AUTH_LOG_IN_ERROR,
+  CLEAR_AUTH_LOG_IN_ERROR,
   RECEIVE_SOCKET_MESSAGE,
   SIGN_OUT,
   userProfileTypes,
@@ -149,6 +150,8 @@ export const validateVerificationCodeApiCall = (
 
       const { status, ...requiredData } = res.data;
 
+      console.log("required data status is:", status);
+
       console.log("required data is:", requiredData);
 
       requiredData.selectedCountry = selectedCountry;
@@ -174,8 +177,18 @@ export const validateVerificationCodeApiCall = (
         console.log("error....");
         console.log(error);
       }
-    } catch (error) {
-      dispatch({ type: AUTH_LOG_IN_ERROR, payload: "authorization error" });
+    } catch (e) {
+      console.log("inside catch");
+      let error;
+      if (e.response.status === 404) {
+        error = "Invalid Verification Code";
+      } else if (e.response.status === 401) {
+        error = "Verification code expired";
+      } else {
+        error = "unexpected error";
+      }
+
+      dispatch({ type: AUTH_LOG_IN_ERROR, payload: error });
     }
   };
 };
@@ -183,4 +196,8 @@ export const validateVerificationCodeApiCall = (
 export const signOutAction = () => {
   console.log("sign out action called...");
   return { type: SIGN_OUT };
+};
+
+export const clearErrorMsg = () => {
+  return { type: CLEAR_AUTH_LOG_IN_ERROR };
 };
