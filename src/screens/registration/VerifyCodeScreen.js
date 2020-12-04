@@ -137,6 +137,7 @@ const VerifyCodeScreen = ({
             style={styles.textInput}
             placeholder="Enter your SMS code"
             keyboardType="numeric"
+            returnKeyType="done"
             value={verificationCode}
             onChangeText={(text) => setVerificationCode(text)}
           ></TextInput>

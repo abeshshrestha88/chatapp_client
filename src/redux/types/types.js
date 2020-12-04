@@ -20,6 +20,7 @@ export const contactsTypes = {
   ADD_CONTACT: "ADD_CONTACT",
   GET_CONTACT: "GET_CONTACT",
   FILTER_CONTACT_LIST: "FILTER_CONTACT_LIST",
+  PULL_PHONE_CONTACT_LIST: "PULL_PHONE_CONTACT_LIST",
 };
 
 export const userProfileTypes = {

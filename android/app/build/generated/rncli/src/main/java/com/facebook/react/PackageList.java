@@ -17,6 +17,8 @@ import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 import com.reactcommunity.rndatetimepicker.RNDateTimePickerPackage;
 // @react-native-community/masked-view
 import org.reactnative.maskedview.RNCMaskedViewPackage;
+// react-native-contacts
+import com.rt2zz.reactnativecontacts.ReactNativeContacts;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-image-picker
@@ -75,6 +77,7 @@ public class PackageList {
       new AsyncStoragePackage(),
       new RNDateTimePickerPackage(),
       new RNCMaskedViewPackage(),
+      new ReactNativeContacts(),
       new RNGestureHandlerPackage(),
       new ImagePickerPackage(),
       new ReanimatedPackage(),

@@ -1,6 +1,12 @@
 import { contactsTypes } from "../types/types";
+import { Platform } from "react-native";
 
-const { ADD_CONTACT, GET_CONTACT, FILTER_CONTACT_LIST } = contactsTypes;
+const {
+  ADD_CONTACT,
+  GET_CONTACT,
+  FILTER_CONTACT_LIST,
+  PULL_PHONE_CONTACT_LIST,
+} = contactsTypes;
 
 import ApiServer from "../../api/ApiServer";
 
@@ -40,4 +46,33 @@ export const AddContactsToGroup = async (currentUserId, groupList) => {
     console.log(error);
     console.log("error creating Group");
   }
+};
+
+export const pullPhoneContactList = (contactList) => {
+  console.log("pull phone contact action called", contactList[0]);
+
+  console.log("phone array is", contactList[0].phoneNumbers);
+
+  let tempArray = [];
+  const contacts = contactList.forEach((contact) => {
+    if (contact.phoneNumbers.length > 0) {
+      const contarr = contact.phoneNumbers.map((phone) => {
+        return Platform.OS == "android"
+          ? { phone: phone.number, name: contact.displayName }
+          : { phone: phone.number, name: contact.givenName };
+        // return { phone: phone.number, name: contact.displayName };
+      });
+
+      // contacts.forEach(()=>{
+
+      // })
+
+      tempArray = [...tempArray, ...contarr];
+      // console.log("#####concat arry is ", tempArray);
+    }
+  });
+
+  console.log("****contact is", tempArray);
+
+  return { type: PULL_PHONE_CONTACT_LIST, payload: tempArray };
 };

@@ -45,27 +45,19 @@ const ContactScreenTab = ({
 
   useEffect(() => {
     console.log("contact list is:", contactList);
-    //TODO: GET CONTACTS FROM PHONE
+    console.log(
+      <pre>
+        <code>{JSON.stringify(contactList, null, 4)}</code>
+      </pre>
+    );
 
-    // (async () => {
-    //   const { status } = await ContactsFromPhone.requestPermissionsAsync();
-    //   if (status === "granted") {
-    //     const { data } = await ContactsFromPhone.getContactsAsync({
-    //       fields: [ContactsFromPhone.Fields.Emails],
-    //     });
-
-    //     if (data.length > 0) {
-    //       const phoneContacts = data;
-    //     }
-    //   }
-    // })();
     setLocalContactList(contactList);
 
-    const unsubscribe = navigation.addListener("focus", () => {
-      getContactsForUser(currentUserId);
-    });
+    // const unsubscribe = navigation.addListener("focus", () => {
+    //   getContactsForUser(currentUserId);
+    // });
 
-    return unsubscribe;
+    // return unsubscribe;
   }, [navigation, contactList]);
 
   const getContactArrayWithFirstLetter = (firstLetter, contactList) => {
@@ -163,10 +155,12 @@ const ContactScreenTab = ({
   };
 
   const Item = ({ contact }) => {
+    console.log("contact in item is", contact);
+
     return (
       <TouchableOpacity
         onPress={() => {
-          handleContactPress(contact);
+          // handleContactPress(contact);
         }}
       >
         <View style={styles.contactRow}>
@@ -199,18 +193,6 @@ const ContactScreenTab = ({
           </Text>
         );
       }
-    } else {
-      return (
-        <View style={styles.noContactsFound}>
-          <FontAwesome5 name="frown" size={34} color="#C0C0C0" />
-          <Text style={styles.noFoundText}>
-            You do not have any friends yet...
-          </Text>
-          <TouchableOpacity onPress={addContactButton}>
-            <Text style={styles.addContactButton}>Add a Friend</Text>
-          </TouchableOpacity>
-        </View>
-      );
     }
   };
 

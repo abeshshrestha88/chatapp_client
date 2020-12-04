@@ -1,5 +1,10 @@
 import { contactsTypes } from "../types/types";
-const { ADD_CONTACT, GET_CONTACT, FILTER_CONTACT_LIST } = contactsTypes;
+const {
+  ADD_CONTACT,
+  GET_CONTACT,
+  FILTER_CONTACT_LIST,
+  PULL_PHONE_CONTACT_LIST,
+} = contactsTypes;
 import _ from "lodash";
 
 const contactsReducer = (
@@ -70,11 +75,11 @@ const contactsReducer = (
     case ADD_CONTACT:
       return { ...state, token: action.payload };
 
-    case GET_CONTACT: {
-      let contactListWithSection = getContactWithSection(action.payload);
+    // case GET_CONTACT: {
+    //   let contactListWithSection = getContactWithSection(action.payload);
 
-      return { ...state, contactList: contactListWithSection };
-    }
+    //   return { ...state, contactList: contactListWithSection };
+    // }
 
     case FILTER_CONTACT_LIST: {
       const contactListAfterFilter = getSearchArray(
@@ -83,6 +88,16 @@ const contactsReducer = (
       );
 
       return { ...state, contactList: contactListAfterFilter };
+    }
+
+    case PULL_PHONE_CONTACT_LIST: {
+      // const contactList = getSearchArray(action.payload);
+
+      const contactWithSectionTitle = getContactWithSection(action.payload);
+
+      // console.log("contact with section is", contactWithSectionTitle);
+
+      return { ...state, contactList: contactWithSectionTitle };
     }
 
     default:

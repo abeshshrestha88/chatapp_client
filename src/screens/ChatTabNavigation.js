@@ -9,6 +9,7 @@ import ContactsTabStackNavigation from "./tabStackNavigation/ContactsTabStackNav
 import SettingsTabStackNavigation from "./tabStackNavigation/SettingsTabStackNavigation";
 import recentConversationTabStackNavigation from "./tabStackNavigation/recentConversationTabStackNavigation";
 import { setPushNotificationTokenAction } from "../redux/actions/pushNotificationAction";
+import { pullPhoneContactList } from "../redux/actions/contactsAction";
 
 import { StackActions, NavigationActions } from "react-navigation";
 import { registerForPushNotificationsAsync } from "../helpers/functions";
@@ -16,6 +17,9 @@ import Constants from "expo-constants";
 // import * as Notifications from "expo-notifications";
 // import * as Permissions from "expo-permissions";
 import { connect } from "react-redux";
+
+import { PermissionsAndroid } from "react-native";
+import Contacts from "react-native-contacts";
 
 // Notifications.setNotificationHandler({
 //   handleNotification: async () => ({
@@ -29,7 +33,60 @@ const ChatTabNavigation = ({
   navigation,
   // setPushNotificationTokenAction,
   conversationId,
+  pullPhoneContactList,
 }) => {
+  useEffect(() => {
+    console.log("inside use effect of chattab navigation ");
+
+    try {
+      if (Platform.OS == "android") {
+        const requestPermissions = async () => {
+          let andoidContactPermission = await PermissionsAndroid.request(
+            PermissionsAndroid.PERMISSIONS.READ_CONTACTS,
+            {
+              title: "Contacts",
+              message: "This app would like to view your contacts.",
+              buttonPositive: "Please accept bare mortal",
+            }
+          );
+
+          console.log("permission is", andoidContactPermission);
+
+          if (andoidContactPermission.toLowerCase() === "granted") {
+            console.log("Contacts Permission granted");
+            Contacts.getAll().then((contactList) => {
+              pullPhoneContactList(contactList);
+            });
+          } else {
+            console.log("Contacts permission denied");
+          }
+        };
+
+        requestPermissions();
+      } else {
+        console.log("inside use effect of chattab navigation- else ");
+        Contacts.getAll().then((contactList) => {
+          console.log("####contact list in use effect", contactList);
+
+          pullPhoneContactList(contactList);
+        });
+      }
+
+      // const andoidContactPermission = await PermissionsAndroid.request(
+      //   PermissionsAndroid.PERMISSIONS.READ_CONTACTS,
+      //   {
+      //     title: "Contacts Permission",
+      //     message: "This app would like to view your contacts.",
+      //     buttonNeutral: "Ask Me Later",
+      //     buttonNegative: "Cancel",
+      //     buttonPositive: "OK",
+      //   }
+      // );
+    } catch (err) {
+      console.log(err);
+    }
+  });
+
   // const responseListener = useRef();
   // const notificationListener = useRef();
   // const [notifications, setNotifications] = useState(null);
@@ -218,6 +275,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = {
   setPushNotificationTokenAction,
+  pullPhoneContactList,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ChatTabNavigation);
