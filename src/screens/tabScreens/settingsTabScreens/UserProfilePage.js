@@ -12,11 +12,23 @@ import {
 import ApiServer from "../../../api/ApiServer";
 import { connect } from "react-redux";
 import { FontAwesome5, Zocial, Foundation, Entypo } from "@expo/vector-icons";
-
+import { getNameInititals } from "../../../helpers/functions";
+const imageJSX = (image, name) => {
+  if (image == "") {
+    return (
+      <View style={styles.profileImage}>
+        <Text style={styles.profile_text}>{getNameInititals(name)}</Text>
+      </View>
+    );
+  } else {
+    return <Image style={styles.profile_image} source={{ uri: image }} />;
+  }
+};
 const UserProfilePage = ({ name, image, email, phoneNumber, phoneCode }) => {
   return (
     <View style={{ flex: 1 }}>
-      <Image style={styles.profile_img} source={{ uri: image }} />
+      {imageJSX(image, name)}
+
       <SafeAreaView style={styles.safeAreaWrapper}>
         <View style={styles.UserInfoWrapper}>
           <View style={styles.screenWrapper}>
@@ -75,10 +87,21 @@ const styles = StyleSheet.create({
     flex: 3,
     backgroundColor: "#ffffff",
   },
-  profile_img: {
+  profileImage: {
+    flex: 3,
+    backgroundColor: "powderblue",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  profile_text: {
+    fontSize: 170,
+    fontWeight: "normal",
+  },
+  profile_image: {
     flex: 3,
     backgroundColor: "powderblue",
   },
+
   UserInfoWrapper: {
     padding: 20,
     // backgroundColor: "red",

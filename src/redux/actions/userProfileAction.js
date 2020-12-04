@@ -56,14 +56,11 @@ export const setUserProfileAction = (InputData, { image_url }) => {
   /* start :: set dob in local storage */
 
   let local_image_url = "";
-  if (image_url !== "") {
+  if (image_url) {
     local_image_url =
       "https://chat-gateway-profile.s3.amazonaws.com/profile-picture/" +
       InputData.phoneNumber +
       "/photo.jpg";
-  } else {
-    local_image_url =
-      "https://chat-gateway-profile.s3.amazonaws.com/profile-picture/default_profile_picture/default_profile__image.jpg";
   }
   try {
     const jsonValue = JSON.stringify({

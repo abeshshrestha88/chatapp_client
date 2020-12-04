@@ -1,3 +1,14 @@
+// Get initials of username
+export const getNameInititals = (name) => {
+  var splitName = name.split(" "),
+    initials = splitName[0].substring(0, 1).toUpperCase();
+  if (splitName.length > 1) {
+    initials += splitName[splitName.length - 1].substring(0, 1).toUpperCase();
+  }
+
+  return initials;
+};
+
 export const getUserAgeFromDOB = (birthday) => {
   // birthday is a date
   var ageDifMs = Date.now() - birthday.getTime();
