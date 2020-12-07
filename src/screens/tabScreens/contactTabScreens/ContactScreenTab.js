@@ -45,13 +45,6 @@ const ContactScreenTab = ({
   const [keyTyped, setKeyTyped] = useState("");
 
   useEffect(() => {
-    console.log("contact list is:", contactList);
-    console.log(
-      <pre>
-        <code>{JSON.stringify(contactList, null, 4)}</code>
-      </pre>
-    );
-
     setLocalContactList(contactList);
 
     // const unsubscribe = navigation.addListener("focus", () => {
@@ -151,8 +144,6 @@ const ContactScreenTab = ({
   };
 
   const Item = ({ contact }) => {
-    console.log("contact in item is", contact);
-
     return (
       <TouchableOpacity
         onPress={() => {

@@ -40,23 +40,6 @@ const ContactsTabStackNavigation = ({ navigation }) => {
         options={({}) => ({
           title: "Profile",
         })}
-        // options={({ route, navigation }) => ({
-        //   headerLeft: (props) => (
-        //     <HeaderBackButton navigation={navigation} {...props} />
-        //   ),
-
-        //   headerTitle: () => (
-        //     <View style={styles.headerTitle}>
-        //       <Image
-        //         style={styles.headerImage}
-        //         source={{
-        //           uri: route.params.image,
-        //         }}
-        //       />
-        //       <Text style={styles.headerText}>{route.params.name}</Text>
-        //     </View>
-        //   ),
-        // })}
       />
     </Stack.Navigator>
   );

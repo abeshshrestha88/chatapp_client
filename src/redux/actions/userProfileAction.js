@@ -8,6 +8,7 @@ const {
   SET_IMAGE,
   SET_USER_PROFILE,
   GET_USERPROFILE,
+  UPDATE_USER_PROFILE,
 } = userProfileTypes;
 
 import AsyncStorage from "@react-native-community/async-storage";
@@ -15,6 +16,8 @@ import AsyncStorage from "@react-native-community/async-storage";
 import moment from "moment";
 
 export const setNameAction = (name) => {
+  console.log("setNameAction called....");
+  console.log(name);
   return { type: SET_NAME, payload: name };
 };
 
@@ -52,7 +55,8 @@ export const setImageAction = (image) => {
 
 export const setUserProfileAction = (InputData, { image_url }) => {
   console.log("set user profile action called");
-
+  console.log(InputData);
+  console.log(image_url);
   /* start :: set dob in local storage */
 
   let local_image_url = "";
@@ -129,6 +133,53 @@ export const setUserProfileAction = (InputData, { image_url }) => {
       }
     } catch (error) {
       console.log("error calling api");
+    }
+  };
+};
+
+export const updateUserProfileAction = (UpdatedData) => {
+  console.log("Update user profile action called");
+  console.log(UpdatedData);
+  try {
+    const jsonValue = JSON.stringify({
+      name: UpdatedData.name,
+      email: UpdatedData.email,
+      dob: UpdatedData.dob,
+      image: UpdatedData.image_url,
+      userProfileSet: true,
+    });
+    console.log(jsonValue);
+    AsyncStorage.setItem("chatapp_local_user_profile", jsonValue);
+  } catch (e) {
+    console.log("inside chatapp_local_user_profile error");
+    console.log(e);
+  }
+
+  UpdatedData.dob = UpdatedData.dob.toISOString();
+  console.log("Before return");
+  return async (dispatch) => {
+    try {
+      console.log("before calling api call - edit-userprofile");
+      const res = await ApiServer.post("/api/user-profile/edit-userprofile", {
+        name: UpdatedData.name,
+        email: UpdatedData.email,
+        dob: UpdatedData.dob,
+        image: UpdatedData.image_url,
+        countryCode: UpdatedData.countryCode,
+        phoneNumber: UpdatedData.phoneNumber,
+      });
+
+      if (res.data.success) {
+        console.log("updated user profile", res.data.user_profile);
+        dispatch({ type: UPDATE_USER_PROFILE, payload: res.data.user_profile });
+        // dispatch({ type: SET_IMAGE, payload: local_image_url });
+
+        // { type: SET_IMAGE, payload: local_image_url };
+      } else {
+        console.log("error updating user profile");
+      }
+    } catch (error) {
+      console.log("error calling edit api");
     }
   };
 };
