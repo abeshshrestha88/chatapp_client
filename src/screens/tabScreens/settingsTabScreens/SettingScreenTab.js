@@ -13,7 +13,7 @@ import {
 import { connect } from "react-redux";
 import ApiServer from "../../../api/ApiServer";
 import * as Updates from "expo-updates";
-
+import { getNameInititals } from "../../../helpers/functions";
 import AsyncStorage from "@react-native-community/async-storage";
 
 import { signOutAction } from "../../../redux/actions/authAction";
@@ -21,6 +21,14 @@ import { signOutAction } from "../../../redux/actions/authAction";
 const SettingsScreenTab = ({ name, image, navigation, signOutAction }) => {
   const handleEditProfile = () => {
     navigation.navigate("UserProfilePage");
+  };
+
+  const imageJSX = (image, name) => {
+    if (image == "") {
+      return <Text style={styles.profileText}>{getNameInititals(name)}</Text>;
+    } else {
+      return <Image style={styles.profileLogo} source={{ uri: image }} />;
+    }
   };
 
   const resetLocalStorage = () => {
@@ -32,7 +40,7 @@ const SettingsScreenTab = ({ name, image, navigation, signOutAction }) => {
 
     // signOutAction();
 
-    // navigation.navigate();
+    navigation.navigate("WelcomeScreen");
 
     // AsyncStorage.setItem("chatapp_local_data", null);
     // AsyncStorage.setItem("chatapp_local_user_profile", null);
@@ -43,9 +51,7 @@ const SettingsScreenTab = ({ name, image, navigation, signOutAction }) => {
       <View style={styles.screenWrapper}>
         <TouchableOpacity onPress={handleEditProfile}>
           <View style={styles.topWrapper}>
-            <View style={styles.profileImage}>
-              <Image style={styles.profileLogo} source={{ uri: image }} />
-            </View>
+            <View style={styles.profileImage}>{imageJSX(image, name)}</View>
             <View style={styles.settingsTop}>
               <Text style={styles.info}> {name}</Text>
               <Text style={styles.profileStatus}>
@@ -112,10 +118,16 @@ const styles = StyleSheet.create({
   info: {
     fontSize: 20,
   },
-  profileLogo: {
-    width: 50,
-    height: 50,
+  profileLogo: { width: 60, height: 60, borderRadius: 50 },
+  profileText: { fontSize: 23 },
+  profileImage: {
+    marginRight: 15,
+    width: 60,
+    height: 60,
     borderRadius: 50,
+    backgroundColor: "powderblue",
+    alignItems: "center",
+    justifyContent: "center",
   },
   contactRow: {
     flexDirection: "row",

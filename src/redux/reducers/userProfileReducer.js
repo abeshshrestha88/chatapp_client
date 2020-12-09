@@ -6,6 +6,7 @@ const {
   SET_IMAGE,
   SET_USER_PROFILE,
   SET_USERPROFILE_SET,
+  UPDATE_USER_PROFILE,
 } = userProfileTypes;
 
 const userProfileReducer = (
@@ -21,6 +22,7 @@ const userProfileReducer = (
 ) => {
   switch (action.type) {
     case SET_NAME:
+      console.log("Inside User reducer", action.payload);
       return {
         ...state,
         name: action.payload,
@@ -53,6 +55,16 @@ const userProfileReducer = (
       };
 
     case SET_USER_PROFILE:
+      return {
+        ...state,
+        name: action.payload.name,
+        email: action.payload.email,
+        dob: action.payload.dob,
+        image: action.payload.profile_img_url,
+        userProfileSet: true,
+      };
+
+    case UPDATE_USER_PROFILE:
       return {
         ...state,
         name: action.payload.name,

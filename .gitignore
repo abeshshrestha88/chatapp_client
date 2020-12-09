@@ -8,12 +8,11 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
-
+**/android/.gradle
 environmentVariable.js
 
 # macOS
 .DS_Store
-
 # OSX
 #
 .DS_Store
