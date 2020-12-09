@@ -7604,6 +7604,11 @@
   "resolved" "https://registry.npmjs.org/react-native-contacts/-/react-native-contacts-6.0.3.tgz"
   "version" "6.0.3"
 
+"react-native-dialog-input@^1.0.8":
+  "integrity" "sha512-W9YNMt6r+rUUMDEkOR1WMuGfSJw97ujB8H1xp8TjJTOnYVSlsf4aEP6t+J8tVk3XZaDcTawXgDjxH6E1WVWRog=="
+  "resolved" "https://registry.npmjs.org/react-native-dialog-input/-/react-native-dialog-input-1.0.8.tgz"
+  "version" "1.0.8"
+
 "react-native-elements@^3.0.0-alpha.1":
   "integrity" "sha512-m85yQLo3wPkC5pF4Sp6bWltINElOVk6G57Ld2QNnVnXHwJ4PI5gYOoSvatxbsUV8MHQuvzTePRwDLZIjFu7HDg=="
   "resolved" "https://registry.npmjs.org/react-native-elements/-/react-native-elements-3.0.0-alpha.1.tgz"

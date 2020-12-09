@@ -14,6 +14,7 @@ import {
 import Search from "../../components/Search";
 import { FontAwesome } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { getNameInititals } from "../../../helpers/functions";
 
 //TODO: GET CONTACTS FROM PHONE
 // import * as ContactsFromPhone from "expo-contacts";
@@ -119,14 +120,9 @@ const ContactScreenTab = ({
     setLocalContactList(contactListAfterFilter);
   };
 
-  const imageJSX = (image) => {
-    if (image === "") {
-      return (
-        <Image
-          style={styles.profileLogo}
-          source={require("../../../../assets/profile-placeholder.png")}
-        />
-      );
+  const imageJSX = (image, userName) => {
+    if (image === undefined) {
+      return <Text style={styles.initials}>{getNameInititals(userName)}</Text>;
     } else {
       return <Image style={styles.profileLogo} source={{ uri: image }} />;
     }
@@ -169,8 +165,6 @@ const ContactScreenTab = ({
   };
 
   const Item = ({ contact }) => {
-    console.log("contact in item is", contact);
-
     return (
       <TouchableOpacity
         onPress={() => {
@@ -178,7 +172,9 @@ const ContactScreenTab = ({
         }}
       >
         <View style={styles.contactRow}>
-          <View style={styles.image}>{imageJSX(contact.profile_img_url)}</View>
+          <View style={styles.image}>
+            {imageJSX(contact.profile_img_url, contact.name)}
+          </View>
           <View style={styles.label}>
             <Text>{contact.name}</Text>
           </View>
@@ -293,7 +289,18 @@ const styles = StyleSheet.create({
   },
   image: {
     marginRight: 15,
+    width: 60,
+    height: 60,
+    borderRadius: 50,
+    backgroundColor: "powderblue",
+    alignItems: "center",
+    justifyContent: "center",
   },
+  initials: {
+    fontSize: 23,
+    color: "#33F0C2",
+  },
+
   label: {},
   sectionTitle: {
     marginTop: 15,
