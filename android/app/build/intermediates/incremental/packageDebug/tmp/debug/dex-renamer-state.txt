@@ -1,4 +1,4 @@
-#Wed Dec 09 15:15:24 NPT 2020
+#Wed Dec 09 15:43:31 NPT 2020
 path.38=classes_6.dex
 base.10=/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/build/intermediates/dex/debug/mergeLibDexDebug/out/classes_15.dex
 path.37=classes_5.dex

@@ -8,13 +8,9 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
-<<<<<<< HEAD
 
 **/android/.gradle
 
-=======
-**/android/.gradle
->>>>>>> 2e63b700ce219034fd22c6114ad9446d4
 environmentVariable.js
 
 /android
