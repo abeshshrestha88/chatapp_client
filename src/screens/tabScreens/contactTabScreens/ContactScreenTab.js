@@ -121,8 +121,12 @@ const ContactScreenTab = ({
   };
 
   const imageJSX = (image, userName) => {
-    if (image === undefined) {
-      return <Text style={styles.initials}>{getNameInititals(userName)}</Text>;
+    if (image === undefined || image === "") {
+      return (
+        <View style={styles.initialsWrapper}>
+          <Text style={styles.initials}>{getNameInititals(userName)}</Text>
+        </View>
+      );
     } else {
       return <Image style={styles.profileLogo} source={{ uri: image }} />;
     }
@@ -280,7 +284,7 @@ const styles = StyleSheet.create({
   profileLogo: {
     width: 50,
     height: 50,
-    borderRadius: 10,
+    borderRadius: 50,
   },
   contactRow: {
     flexDirection: "row",
@@ -292,13 +296,26 @@ const styles = StyleSheet.create({
     width: 60,
     height: 60,
     borderRadius: 50,
-    backgroundColor: "powderblue",
+    // backgroundColor: "powderblue",
     alignItems: "center",
     justifyContent: "center",
   },
+
   initials: {
     fontSize: 23,
     color: "#33F0C2",
+    textAlign: "center",
+  },
+
+  initialsWrapper: {
+    width: 50,
+    height: 50,
+    borderRadius: 90,
+    fontSize: 23,
+    color: "#33F0C2",
+    backgroundColor: "powderblue",
+    justifyContent: "center",
+    // textAlign: "center",
   },
 
   label: {},
