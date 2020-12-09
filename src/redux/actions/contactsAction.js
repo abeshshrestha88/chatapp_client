@@ -48,31 +48,63 @@ export const AddContactsToGroup = async (currentUserId, groupList) => {
   }
 };
 
-export const pullPhoneContactList = (contactList) => {
-  console.log("pull phone contact action called", contactList[0]);
+export const pullPhoneContactList = (contactList, currentUserId) => {
+  return async (dispatch) => {
+    // console.log("pull phone contact action called", contactList[0]);
+    // console.log("phone array is", contactList[0].phoneNumbers);
 
-  console.log("phone array is", contactList[0].phoneNumbers);
+    const checkContactInDatabase = async (LocalContactList) => {
+      // const localPhoneArray = LocalContactList.map((contacts) => {
+      //   return contacts.phone;
+      // });
 
-  let tempArray = [];
-  const contacts = contactList.forEach((contact) => {
-    if (contact.phoneNumbers.length > 0) {
-      const contarr = contact.phoneNumbers.map((phone) => {
-        return Platform.OS == "android"
-          ? { phone: phone.number, name: contact.displayName }
-          : { phone: phone.number, name: contact.givenName };
-        // return { phone: phone.number, name: contact.displayName };
+      // console.log("inside checkcontact in db", LocalContactList);
+      const stringContactList = JSON.stringify(LocalContactList);
+
+      try {
+        const res = await ApiServer.post("/api/contacts/checkContactsIndb", {
+          stringContactList: stringContactList,
+          currentUserId: currentUserId,
+        });
+
+        // console.log("return data is", res.data);
+
+        dispatch({ type: PULL_PHONE_CONTACT_LIST, payload: res.data.contacts });
+      } catch (error) {
+        // console.log("contacts list error calling api");
+        // console.log(error);
+      }
+    };
+
+    const getLocalContactList = () => {
+      let tempArray = [];
+      const contacts = contactList.forEach((contact) => {
+        if (contact.phoneNumbers.length > 0) {
+          const contarr = contact.phoneNumbers.map((phone) => {
+            // checkContactInDatabase(phone);
+
+            return Platform.OS == "android"
+              ? { phone: phone.number, name: contact.displayName }
+              : { phone: phone.number, name: contact.givenName };
+            // return { phone: phone.number, name: contact.displayName };
+          });
+
+          tempArray = [...tempArray, ...contarr];
+          // console.log("#####concat arry is ", tempArray);
+        }
+
+        // console.log("****contact is", tempArray);
+
+        // return { type: PULL_PHONE_CONTACT_LIST, payload: tempArray };
       });
 
-      // contacts.forEach(()=>{
+      return tempArray;
+    };
 
-      // })
+    // console.log("get local contact list is", getLocalContactList());
 
-      tempArray = [...tempArray, ...contarr];
-      // console.log("#####concat arry is ", tempArray);
-    }
-  });
+    const LocalContactList = getLocalContactList();
 
-  console.log("****contact is", tempArray);
-
-  return { type: PULL_PHONE_CONTACT_LIST, payload: tempArray };
+    checkContactInDatabase(LocalContactList);
+  };
 };

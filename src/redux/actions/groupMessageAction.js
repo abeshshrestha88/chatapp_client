@@ -34,10 +34,10 @@ export const getGroupConversationAction = (userId) => {
         }
       );
 
-      console.log(
-        "group conversation list is: ",
-        res.data.groupConversationList
-      );
+      // console.log(
+      //   "group conversation list is: ",
+      //   res.data.groupConversationList
+      // );
 
       dispatch({
         type: GET_GROUP_FROM_SERVER,

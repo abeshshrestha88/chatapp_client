@@ -39,7 +39,7 @@ const messagesReducer = (
       };
 
     case GET_GROUP_FROM_SERVER:
-      console.log("group list in reducer is:", action.payload);
+      // console.log("group list in reducer is:", action.payload);
 
       return {
         ...state,

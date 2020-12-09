@@ -91,11 +91,14 @@ const contactsReducer = (
     }
 
     case PULL_PHONE_CONTACT_LIST: {
+      // console.log("retrun data in reducer is", action.payload);
       // const contactList = getSearchArray(action.payload);
 
       const contactWithSectionTitle = getContactWithSection(action.payload);
 
-      // console.log("contact with section is", contactWithSectionTitle);
+      console.log("contact with section is", contactWithSectionTitle);
+
+      console.log(contactWithSectionTitle[0].data);
 
       return { ...state, contactList: contactWithSectionTitle };
     }

@@ -9,8 +9,11 @@ import {
   Image,
   SectionList,
   SafeAreaView,
+  Modal,
 } from "react-native";
 import Search from "../../components/Search";
+import { FontAwesome } from "@expo/vector-icons";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 //TODO: GET CONTACTS FROM PHONE
 // import * as ContactsFromPhone from "expo-contacts";
@@ -23,6 +26,8 @@ import {
   getMessagesAction,
   clearMessagesAction,
 } from "../../../redux/actions/messageAction";
+
+import SendInviteModal from "../../components/SendInviteModal";
 
 import _ from "lodash";
 import { CommonActions } from "@react-navigation/native";
@@ -39,12 +44,12 @@ const ContactScreenTab = ({
   clearMessagesAction,
 }) => {
   const [addScreenModelVisible, setAddScreenModelVisible] = useState(false);
-
   const [localContactList, setLocalContactList] = useState([]);
   const [keyTyped, setKeyTyped] = useState("");
+  const [sendInviteModalVisible, setSendInviteModalVisible] = useState(false);
 
   useEffect(() => {
-    console.log("contact list is:", contactList);
+    console.log("useEffect-contact list is:", contactList);
     console.log(
       <pre>
         <code>{JSON.stringify(contactList, null, 4)}</code>
@@ -128,26 +133,35 @@ const ContactScreenTab = ({
   };
 
   const handleContactPress = async (contact) => {
-    const conversation_id = await getConversationIdAction(
-      currentUserId,
-      contact.contactId
-    );
+    console.log("inside handle contact press");
+    console.log("contact is", contact);
+    console.log("contact id is", contact.contactId);
 
-    clearMessagesAction();
-    getMessagesAction(currentUserId, contact.contactId);
+    if (contact.user_exist) {
+      const conversation_id = await getConversationIdAction(
+        currentUserId,
+        contact.contactId
+      );
 
-    navigation.navigate(
-      "MessageScreen",
-
-      {
+      clearMessagesAction();
+      getMessagesAction(currentUserId, contact.contactId);
+      navigation.navigate("MessageScreen", {
         currentUserId,
         contact,
         conversationId: conversation_id,
         name: contact.name.split(" ")[0],
         image: contact.profile_img_url,
         notification_token: contact.notification_token,
-      }
-    );
+      });
+    } else {
+      handleSendInviteModal();
+      console.log("user does not exist- do nothing");
+    }
+  };
+
+  const handleSendInviteModal = () => {
+    setSendInviteModalVisible(!sendInviteModalVisible);
+    console.log("model clicked.....");
   };
 
   const addContactButton = () => {
@@ -160,7 +174,7 @@ const ContactScreenTab = ({
     return (
       <TouchableOpacity
         onPress={() => {
-          // handleContactPress(contact);
+          handleContactPress(contact);
         }}
       >
         <View style={styles.contactRow}>
@@ -168,6 +182,22 @@ const ContactScreenTab = ({
           <View style={styles.label}>
             <Text>{contact.name}</Text>
           </View>
+          {contact.user_exist && (
+            <>
+              <FontAwesome name="phone-square" size={24} color="black" />
+              <MaterialCommunityIcons
+                name="tooltip-text"
+                size={24}
+                color="black"
+              />
+            </>
+          )}
+
+          {!contact.user_exist && <Text style={styles.invite}>Invite</Text>}
+
+          {/* <View>
+            <Text>{contact.user_exist ? "true" : "false"}</Text>
+          </View> */}
         </View>
       </TouchableOpacity>
     );
@@ -207,6 +237,17 @@ const ContactScreenTab = ({
         </View>
         <View>{sectionJSX()}</View>
       </View>
+
+      <Modal
+        animationType="slide"
+        transparent={true}
+        visible={sendInviteModalVisible}
+        onRequestClose={() => {
+          Alert.alert("Modal has been closed.");
+        }}
+      >
+        <SendInviteModal handleSendInviteModal={handleSendInviteModal} />
+      </Modal>
     </SafeAreaView>
   );
 };
@@ -280,5 +321,8 @@ const styles = StyleSheet.create({
     padding: 10,
     backgroundColor: "#33F0C2",
     borderRadius: 5,
+  },
+  invite: {
+    marginLeft: 50,
   },
 });

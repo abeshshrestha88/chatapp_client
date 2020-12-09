@@ -22,6 +22,9 @@ export const getConversationAction = (userId) => {
 };
 
 export const getConversationIdAction = async (currentUserId, contactId) => {
+  console.log(currentUserId);
+  console.log("contactId", contactId);
+
   try {
     const res = await ApiServer.get("/api/conversation/get-conversation-id", {
       params: { currentUserId, contactId },

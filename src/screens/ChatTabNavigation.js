@@ -34,9 +34,10 @@ const ChatTabNavigation = ({
   // setPushNotificationTokenAction,
   conversationId,
   pullPhoneContactList,
+  currentUserId,
 }) => {
   useEffect(() => {
-    console.log("inside use effect of chattab navigation ");
+    console.log("number of times :: inside use effect of chattab navigation ");
 
     try {
       if (Platform.OS == "android") {
@@ -55,7 +56,7 @@ const ChatTabNavigation = ({
           if (andoidContactPermission.toLowerCase() === "granted") {
             console.log("Contacts Permission granted");
             Contacts.getAll().then((contactList) => {
-              pullPhoneContactList(contactList);
+              pullPhoneContactList(contactList, currentUserId);
             });
           } else {
             console.log("Contacts permission denied");
@@ -68,7 +69,7 @@ const ChatTabNavigation = ({
         Contacts.getAll().then((contactList) => {
           console.log("####contact list in use effect", contactList);
 
-          pullPhoneContactList(contactList);
+          pullPhoneContactList(contactList, currentUserId);
         });
       }
 
@@ -85,7 +86,7 @@ const ChatTabNavigation = ({
     } catch (err) {
       console.log(err);
     }
-  });
+  }, []);
 
   // const responseListener = useRef();
   // const notificationListener = useRef();

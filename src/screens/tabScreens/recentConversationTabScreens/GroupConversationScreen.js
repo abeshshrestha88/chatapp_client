@@ -50,7 +50,7 @@ const GroupConversationScreen = ({
   // }, [messages]);
 
   useEffect(() => {
-    console.log("group conversation list is", groupConversationList);
+    // console.log("group conversation list is", groupConversationList);
 
     setLocalGroupConversationList(groupConversationList);
   }, [groupConversationList]);
