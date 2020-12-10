@@ -9,532 +9,535 @@
 9        android:targetSdkVersion="28" />
 10
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-11-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:3:3-75
-11-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:3:20-73
+11-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:3:3-75
+11-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:3:20-73
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:2:3-64
-12-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:2:20-62
+12-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:2:3-64
+12-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:2:20-62
 13    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
-13-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:4:3-72
-13-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:4:20-70
+13-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:4:3-72
+13-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:4:20-70
 14    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
-14-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:5:3-77
-14-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:5:20-75
+14-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:5:3-77
+14-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:5:20-75
 15    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-15-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:6:3-72
-15-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:6:20-70
+15-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:6:3-72
+15-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:6:20-70
 16    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
-16-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:7:3-71
-16-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:7:20-69
+16-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:7:3-71
+16-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:7:20-69
 17    <uses-permission android:name="android.permission.VIBRATE" />
-17-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:8:3-63
-17-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:8:20-61
+17-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:8:3-63
+17-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:8:20-61
 18    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-18-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:9:3-77
-18-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:9:20-75
+18-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:9:3-77
+18-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:9:20-75
 19    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-19-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:10:3-78
-19-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:10:20-76
+19-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:10:3-78
+19-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:10:20-76
 20    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-20-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:11:3-76
-20-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:11:20-74
+20-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:11:3-76
+20-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:11:20-74
 21    <uses-permission android:name="android.permission.CAMERA" />
-21-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:12:3-62
-21-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:12:20-60
+21-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:12:3-62
+21-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:12:20-60
 22    <uses-permission android:name="android.permission.READ_CONTACTS" />
-22-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:13:3-69
-22-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:13:20-67
-23    <uses-permission android:name="android.permission.READ_CALENDAR" />
-23-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:14:3-69
-23-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:14:20-67
-24    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
-24-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:15:3-70
-24-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:15:20-68
-25    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-25-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:16:3-77
-25-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:16:20-75
-26    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-26-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:17:3-68
-26-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:17:20-66
-27    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-27-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:18:3-78
-27-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:18:20-76
-28    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-28-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:19:3-70
-28-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:19:20-68
-29    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-29-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:20:3-76
-29-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:20:20-74
-30    <uses-permission android:name="android.permission.WAKE_LOCK" />
-30-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:21:3-65
-30-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:21:20-63
-31    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-31-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:22:3-79
-31-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:22:20-77
-32    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-32-->[com.facebook.flipper:flipper:0.33.1] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/8c6069d3ea7d5fce0bd743e9ba0e5cff/jetified-flipper-0.33.1/AndroidManifest.xml:16:5-76
-32-->[com.facebook.flipper:flipper:0.33.1] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/8c6069d3ea7d5fce0bd743e9ba0e5cff/jetified-flipper-0.33.1/AndroidManifest.xml:16:22-73
-33    <uses-permission android:name="android.permission.STORAGE" />
-33-->[:expo-file-system] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-66
-33-->[:expo-file-system] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:22-63
-34    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-34-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-81
-34-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-78
-35    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-35-->[:expo-location] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-77
-35-->[:expo-location] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-74
-36    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- for android -->
-36-->[com.android.installreferrer:installreferrer:1.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/eaea7da5073a943a099398e9b65fd63d/jetified-installreferrer-1.0/AndroidManifest.xml:9:5-110
-36-->[com.android.installreferrer:installreferrer:1.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/eaea7da5073a943a099398e9b65fd63d/jetified-installreferrer-1.0/AndroidManifest.xml:9:22-107
-37    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
-38    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
-39    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
-40    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
-41    <!-- for Samsung -->
-42    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
-42-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
-42-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:19:22-83
-43    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
-43-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
-43-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:20:22-84
-44    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
-44-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
-44-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:23:22-78
-45    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
-45-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
-45-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:24:22-80
-46    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
-46-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
-46-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:27:22-85
-47    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
-47-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
-47-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
-48    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
-48-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
-48-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
-49    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
-49-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
-49-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
-50    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
-50-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
-50-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
-51    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
-51-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
-51-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
-52    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
-52-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
-52-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
-53    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
-53-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
-53-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
-54    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
-54-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
-54-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
-55    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
-55-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
-55-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
-56    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
-56-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
-56-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
-57    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
-57-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
-57-->[me.leolin:ShortcutBadger:1.1.22] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
-58    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-58-->[io.nlopez.smartlocation:library:3.2.11] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/dc7e85ebe588f8bb98e0f8c64251dba7/jetified-library-3.2.11/AndroidManifest.xml:15:5-98
-58-->[io.nlopez.smartlocation:library:3.2.11] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/dc7e85ebe588f8bb98e0f8c64251dba7/jetified-library-3.2.11/AndroidManifest.xml:15:22-95
-59    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
-59-->[io.nlopez.smartlocation:library:3.2.11] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/dc7e85ebe588f8bb98e0f8c64251dba7/jetified-library-3.2.11/AndroidManifest.xml:16:5-94
-59-->[io.nlopez.smartlocation:library:3.2.11] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/dc7e85ebe588f8bb98e0f8c64251dba7/jetified-library-3.2.11/AndroidManifest.xml:16:22-91
-60
-61    <application
-61-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:23:3-42:17
-62        android:name="com.chatapp.chatfrontend.MainApplication"
-62-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:23:16-47
-63        android:allowBackup="true"
-63-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:23:162-188
-64        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-64-->[androidx.core:core:1.2.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/dbfa41c1c8810f45415d97261982f948/core-1.2.0/AndroidManifest.xml:24:18-86
-65        android:debuggable="true"
-66        android:icon="@mipmap/ic_launcher"
-66-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:23:81-115
-67        android:label="@string/app_name"
-67-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:23:48-80
-68        android:roundIcon="@mipmap/ic_launcher_round"
-68-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:23:116-161
-69        android:theme="@style/AppTheme"
-69-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:23:189-220
-70        android:usesCleartextTraffic="true" >
-70-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/debug/AndroidManifest.xml:6:18-53
-71        <meta-data
-71-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:24:5-126
-72            android:name="expo.modules.updates.EXPO_UPDATE_URL"
-72-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:24:16-67
-73            android:value="https://exp.host/@rosnk/chatapp_frontend" />
-73-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:24:68-124
-74        <meta-data
-74-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:25:5-93
-75            android:name="expo.modules.updates.EXPO_SDK_VERSION"
-75-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:25:16-68
-76            android:value="38.0.0" />
-76-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:25:69-91
-77        <meta-data
-77-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:26:5-82
-78            android:name="expo.modules.updates.ENABLED"
-78-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:26:16-59
-79            android:value="true" />
-79-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:26:60-80
-80        <meta-data
-80-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:27:5-105
-81            android:name="expo.modules.updates.EXPO_UPDATES_CHECK_ON_LAUNCH"
-81-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:27:16-80
-82            android:value="ALWAYS" />
-82-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:27:81-103
-83        <meta-data
-83-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:28:5-99
-84            android:name="expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS"
-84-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:28:16-79
-85            android:value="0" />
-85-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:28:80-97
-86
-87        <activity
-87-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:29:5-40:16
-88            android:name="com.chatapp.chatfrontend.MainActivity"
-88-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:29:15-43
-89            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-89-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:29:77-154
-90            android:label="@string/app_name"
-90-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:29:44-76
-91            android:launchMode="singleTask"
-91-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:29:155-186
-92            android:screenOrientation="portrait"
-92-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:29:276-312
-93            android:theme="@style/Theme.App.SplashScreen"
-93-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:29:230-275
-94            android:windowSoftInputMode="adjustResize" >
-94-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:29:187-229
-95            <intent-filter>
-95-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:30:7-33:23
-96                <action android:name="android.intent.action.MAIN" />
-96-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:31:9-60
-96-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:31:17-58
-97
-98                <category android:name="android.intent.category.LAUNCHER" />
-98-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:32:9-68
-98-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:32:19-66
-99            </intent-filter>
-100            <intent-filter>
-100-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:34:7-39:23
-101                <action android:name="android.intent.action.VIEW" />
-101-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:35:9-60
-101-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:35:17-58
-102
-103                <category android:name="android.intent.category.DEFAULT" />
-103-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:36:9-67
-103-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:36:19-65
-104                <category android:name="android.intent.category.BROWSABLE" />
-104-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:37:9-69
-104-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:37:19-67
-105
-106                <data android:scheme="com.chatapp.chatfrontend" />
-106-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:38:9-58
-106-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:38:15-56
-107            </intent-filter>
-108        </activity>
-109        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-109-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:41:5-81
-109-->/Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/android/app/src/main/AndroidManifest.xml:41:15-79
-110
-111        <meta-data
-111-->[:unimodules-react-native-adapter] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:91
-112            android:name="org.unimodules.core.AppLoader#react-native-headless"
-112-->[:unimodules-react-native-adapter] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-79
-113            android:value="org.unimodules.adapters.react.apploader.RNHeadlessAppLoader" />
-113-->[:unimodules-react-native-adapter] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-88
-114
-115        <provider
-115-->[:react-native-image-picker] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-18:20
-116            android:name="com.imagepicker.FileProvider"
-116-->[:react-native-image-picker] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-56
-117            android:authorities="com.chatapp.chatfrontend.provider"
-117-->[:react-native-image-picker] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-60
-118            android:exported="false"
-118-->[:react-native-image-picker] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-37
-119            android:grantUriPermissions="true" >
-119-->[:react-native-image-picker] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-47
-120            <meta-data
-120-->[:react-native-image-picker] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-17:58
-121                android:name="android.support.FILE_PROVIDER_PATHS"
-121-->[:react-native-image-picker] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:17-67
-122                android:resource="@xml/provider_paths" />
-122-->[:react-native-image-picker] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-55
-123        </provider>
-124        <provider
-124-->[:expo-file-system] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:9-27:20
-125            android:name="expo.modules.filesystem.FileSystemFileProvider"
-125-->[:expo-file-system] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-74
-126            android:authorities="com.chatapp.chatfrontend.FileSystemFileProvider"
-126-->[:expo-file-system] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-74
-127            android:exported="false"
-127-->[:expo-file-system] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-37
-128            android:grantUriPermissions="true" >
-128-->[:expo-file-system] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-47
-129            <meta-data
-129-->[:react-native-image-picker] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-17:58
-130                android:name="android.support.FILE_PROVIDER_PATHS"
-130-->[:react-native-image-picker] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:17-67
-131                android:resource="@xml/file_system_provider_paths" />
-131-->[:react-native-image-picker] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-55
-132        </provider> <!-- https://developer.android.com/guide/topics/manifest/provider-element.html -->
-133        <provider
-133-->[:expo-image-picker] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:9-22:20
-134            android:name="expo.modules.imagepicker.ImagePickerFileProvider"
-134-->[:expo-image-picker] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-76
-135            android:authorities="com.chatapp.chatfrontend.ImagePickerFileProvider"
-135-->[:expo-image-picker] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-75
-136            android:exported="false"
-136-->[:expo-image-picker] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-37
-137            android:grantUriPermissions="true" >
-137-->[:expo-image-picker] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-47
-138            <meta-data
-138-->[:react-native-image-picker] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-17:58
-139                android:name="android.support.FILE_PROVIDER_PATHS"
-139-->[:react-native-image-picker] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:17-67
-140                android:resource="@xml/image_picker_provider_paths" />
-140-->[:react-native-image-picker] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-55
-141        </provider>
-142
-143        <service
-143-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:9-20:19
-144            android:name="expo.modules.notifications.FirebaseListenerService"
-144-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-78
-145            android:exported="false" >
-145-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-37
-146            <intent-filter android:priority="-1" >
-146-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:29
-146-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:28-49
-147                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-147-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-78
-147-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:25-75
-148            </intent-filter>
-149        </service>
-150        <service
-150-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:9-28:19
-151            android:name="expo.modules.notifications.notifications.service.ExpoNotificationsService"
-151-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-101
-152            android:exported="false"
-152-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-37
-153            android:permission="android.permission.BIND_JOB_SERVICE" >
-153-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-69
-154            <intent-filter android:order="-1" >
-154-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-27:29
-154-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:28-46
-155                <action android:name="expo.modules.notifications.NOTIFICATION_EVENT" />
-155-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:17-88
-155-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:25-85
-156            </intent-filter>
-157        </service>
-158        <service
-158-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:9-32:72
-159            android:name="expo.modules.notifications.notifications.service.ExpoNotificationSchedulerService"
-159-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-109
-160            android:exported="false"
-160-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:13-37
-161            android:permission="android.permission.BIND_JOB_SERVICE" />
-161-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:13-69
-162
-163        <receiver
-163-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:9-44:20
-164            android:name="expo.modules.notifications.notifications.service.ScheduledAlarmReceiver"
-164-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:13-99
-165            android:enabled="true"
-165-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-35
-166            android:exported="false" >
-166-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:13-37
-167            <intent-filter>
-167-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:13-43:29
-168                <action android:name="expo.modules.notifications.TRIGGER_EVENT" />
-168-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:17-83
-168-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:25-80
-169                <action android:name="android.intent.action.BOOT_COMPLETED" />
-169-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:40:17-79
-169-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:40:25-76
-170                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-170-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:41:17-82
-170-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:41:25-79
-171                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
-171-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:17-82
-171-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:25-79
-172            </intent-filter>
-173        </receiver>
-174        <receiver
-174-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:45:9-48:40
-175            android:name="expo.modules.notifications.notifications.service.NotificationResponseReceiver"
-175-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:46:13-105
-176            android:enabled="true"
-176-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:47:13-35
-177            android:exported="false" />
-177-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:48:13-37
-178
-179        <service
-179-->[:expo-location] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:40
-180            android:name="expo.modules.location.services.LocationTaskService"
-180-->[:expo-location] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-78
-181            android:exported="false" />
-181-->[:expo-location] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
-182        <!--
-183             FirebaseMessagingService performs security checks at runtime,
-184             but set to not exported to explicitly avoid allowing another app to call it.
-185        -->
-186        <service
-186-->[com.google.firebase:firebase-messaging:20.1.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/6868f8ceaf706d1465d2f944f7a07751/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:28:9-34:19
-187            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-187-->[com.google.firebase:firebase-messaging:20.1.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/6868f8ceaf706d1465d2f944f7a07751/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:29:13-82
-188            android:exported="false" >
-188-->[com.google.firebase:firebase-messaging:20.1.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/6868f8ceaf706d1465d2f944f7a07751/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:30:13-37
-189            <intent-filter android:priority="-500" >
-189-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:29
-189-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:28-49
-190                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-190-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-78
-190-->[:expo-notifications] /Volumes/roshan_1T/MAC/Documents/projects/chatapp_frontend/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:25-75
-191            </intent-filter>
-192        </service>
-193        <service
-193-->[com.google.firebase:firebase-messaging:20.1.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/6868f8ceaf706d1465d2f944f7a07751/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:35:9-41:19
-194            android:name="com.google.firebase.components.ComponentDiscoveryService"
-194-->[com.google.firebase:firebase-messaging:20.1.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/6868f8ceaf706d1465d2f944f7a07751/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:36:13-84
-195            android:directBootAware="true"
-195-->[com.google.firebase:firebase-common:19.3.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/ef42748552080f6ed1f01f6c452a878c/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
-196            android:exported="false" >
-196-->[com.google.firebase:firebase-messaging:20.1.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/6868f8ceaf706d1465d2f944f7a07751/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:37:13-37
-197            <meta-data
-197-->[com.google.firebase:firebase-messaging:20.1.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/6868f8ceaf706d1465d2f944f7a07751/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:38:13-40:85
-198                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-198-->[com.google.firebase:firebase-messaging:20.1.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/6868f8ceaf706d1465d2f944f7a07751/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:39:17-119
-199                android:value="com.google.firebase.components.ComponentRegistrar" />
-199-->[com.google.firebase:firebase-messaging:20.1.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/6868f8ceaf706d1465d2f944f7a07751/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:40:17-82
-200            <meta-data
-200-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/17f95744325d0f1bda31c05825fccaf3/firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
-201                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-201-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/17f95744325d0f1bda31c05825fccaf3/firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
-202                android:value="com.google.firebase.components.ComponentRegistrar" />
-202-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/17f95744325d0f1bda31c05825fccaf3/firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
-203            <meta-data
-203-->[com.google.firebase:firebase-iid:20.0.2] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/a5bfd9c1e524290d1e5e34cbdd64b069/firebase-iid-20.0.2/AndroidManifest.xml:32:13-34:85
-204                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-204-->[com.google.firebase:firebase-iid:20.0.2] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/a5bfd9c1e524290d1e5e34cbdd64b069/firebase-iid-20.0.2/AndroidManifest.xml:33:17-96
-205                android:value="com.google.firebase.components.ComponentRegistrar" />
-205-->[com.google.firebase:firebase-iid:20.0.2] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/a5bfd9c1e524290d1e5e34cbdd64b069/firebase-iid-20.0.2/AndroidManifest.xml:34:17-82
-206        </service>
-207        <service
-207-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/7cfadab1097ec23cef362f527c0bd2ea/transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
-208            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-208-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/7cfadab1097ec23cef362f527c0bd2ea/transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
-209            android:exported="false" >
-209-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/7cfadab1097ec23cef362f527c0bd2ea/transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
-210            <meta-data
-210-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/7cfadab1097ec23cef362f527c0bd2ea/transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
-211                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-211-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/7cfadab1097ec23cef362f527c0bd2ea/transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
-212                android:value="cct" />
-212-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/7cfadab1097ec23cef362f527c0bd2ea/transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
-213        </service>
-214        <service
-214-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/534f59c9fcf953f781a6edb4fea2bcac/transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
-215            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-215-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/534f59c9fcf953f781a6edb4fea2bcac/transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
-216            android:exported="false"
-216-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/534f59c9fcf953f781a6edb4fea2bcac/transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
-217            android:permission="android.permission.BIND_JOB_SERVICE" >
-217-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/534f59c9fcf953f781a6edb4fea2bcac/transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
-218        </service>
-219
-220        <receiver
-220-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/534f59c9fcf953f781a6edb4fea2bcac/transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
-221            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-221-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/534f59c9fcf953f781a6edb4fea2bcac/transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
-222            android:exported="false" />
-222-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/534f59c9fcf953f781a6edb4fea2bcac/transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
-223
-224        <service
-224-->[androidx.room:room-runtime:2.1.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/1f9600edb87ec7249ed2f749439da712/room-runtime-2.1.0/AndroidManifest.xml:25:9-27:40
-225            android:name="androidx.room.MultiInstanceInvalidationService"
-225-->[androidx.room:room-runtime:2.1.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/1f9600edb87ec7249ed2f749439da712/room-runtime-2.1.0/AndroidManifest.xml:26:13-74
-226            android:exported="false" />
-226-->[androidx.room:room-runtime:2.1.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/1f9600edb87ec7249ed2f749439da712/room-runtime-2.1.0/AndroidManifest.xml:27:13-37
-227
-228        <receiver
-228-->[com.google.firebase:firebase-iid:20.0.2] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/a5bfd9c1e524290d1e5e34cbdd64b069/firebase-iid-20.0.2/AndroidManifest.xml:37:9-44:20
-229            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-229-->[com.google.firebase:firebase-iid:20.0.2] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/a5bfd9c1e524290d1e5e34cbdd64b069/firebase-iid-20.0.2/AndroidManifest.xml:38:13-78
-230            android:exported="true"
-230-->[com.google.firebase:firebase-iid:20.0.2] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/a5bfd9c1e524290d1e5e34cbdd64b069/firebase-iid-20.0.2/AndroidManifest.xml:39:13-36
-231            android:permission="com.google.android.c2dm.permission.SEND" >
-231-->[com.google.firebase:firebase-iid:20.0.2] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/a5bfd9c1e524290d1e5e34cbdd64b069/firebase-iid-20.0.2/AndroidManifest.xml:40:13-73
-232            <intent-filter>
-232-->[com.google.firebase:firebase-iid:20.0.2] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/a5bfd9c1e524290d1e5e34cbdd64b069/firebase-iid-20.0.2/AndroidManifest.xml:41:13-43:29
-233                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-233-->[com.google.firebase:firebase-iid:20.0.2] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/a5bfd9c1e524290d1e5e34cbdd64b069/firebase-iid-20.0.2/AndroidManifest.xml:42:17-81
-233-->[com.google.firebase:firebase-iid:20.0.2] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/a5bfd9c1e524290d1e5e34cbdd64b069/firebase-iid-20.0.2/AndroidManifest.xml:42:25-78
-234            </intent-filter>
-235        </receiver>
-236
-237        <provider
-237-->[com.google.firebase:firebase-common:19.3.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/ef42748552080f6ed1f01f6c452a878c/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
-238            android:name="com.google.firebase.provider.FirebaseInitProvider"
-238-->[com.google.firebase:firebase-common:19.3.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/ef42748552080f6ed1f01f6c452a878c/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
-239            android:authorities="com.chatapp.chatfrontend.firebaseinitprovider"
-239-->[com.google.firebase:firebase-common:19.3.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/ef42748552080f6ed1f01f6c452a878c/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
-240            android:exported="false"
-240-->[com.google.firebase:firebase-common:19.3.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/ef42748552080f6ed1f01f6c452a878c/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
-241            android:initOrder="100" />
-241-->[com.google.firebase:firebase-common:19.3.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/ef42748552080f6ed1f01f6c452a878c/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
-242
-243        <activity
-243-->[com.google.android.gms:play-services-base:17.0.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/ab9598a8ca8aa96512c99999c7acad33/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
-244            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-244-->[com.google.android.gms:play-services-base:17.0.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/ab9598a8ca8aa96512c99999c7acad33/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-245            android:exported="false"
-245-->[com.google.android.gms:play-services-base:17.0.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/ab9598a8ca8aa96512c99999c7acad33/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
-246            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-246-->[com.google.android.gms:play-services-base:17.0.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/ab9598a8ca8aa96512c99999c7acad33/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
-247
-248        <meta-data
-248-->[com.google.android.gms:play-services-basement:17.0.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/0ca8923a63b39abe61043a8f765cdee4/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-249            android:name="com.google.android.gms.version"
-249-->[com.google.android.gms:play-services-basement:17.0.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/0ca8923a63b39abe61043a8f765cdee4/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-250            android:value="@integer/google_play_services_version" />
-250-->[com.google.android.gms:play-services-basement:17.0.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/0ca8923a63b39abe61043a8f765cdee4/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-251
-252        <provider
-252-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/70a35ff34a52e788ebdff6ceaf2ae604/lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
-253            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-253-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/70a35ff34a52e788ebdff6ceaf2ae604/lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
-254            android:authorities="com.chatapp.chatfrontend.lifecycle-process"
-254-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/70a35ff34a52e788ebdff6ceaf2ae604/lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
-255            android:exported="false"
-255-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/70a35ff34a52e788ebdff6ceaf2ae604/lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
-256            android:multiprocess="true" />
-256-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/70a35ff34a52e788ebdff6ceaf2ae604/lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
-257
-258        <service
-258-->[io.nlopez.smartlocation:library:3.2.11] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/dc7e85ebe588f8bb98e0f8c64251dba7/jetified-library-3.2.11/AndroidManifest.xml:19:9-21:40
-259            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
-259-->[io.nlopez.smartlocation:library:3.2.11] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/dc7e85ebe588f8bb98e0f8c64251dba7/jetified-library-3.2.11/AndroidManifest.xml:20:13-132
-260            android:exported="false" />
-260-->[io.nlopez.smartlocation:library:3.2.11] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/dc7e85ebe588f8bb98e0f8c64251dba7/jetified-library-3.2.11/AndroidManifest.xml:21:13-37
-261        <service
-261-->[io.nlopez.smartlocation:library:3.2.11] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/dc7e85ebe588f8bb98e0f8c64251dba7/jetified-library-3.2.11/AndroidManifest.xml:22:9-24:40
-262            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
-262-->[io.nlopez.smartlocation:library:3.2.11] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/dc7e85ebe588f8bb98e0f8c64251dba7/jetified-library-3.2.11/AndroidManifest.xml:23:13-127
-263            android:exported="false" />
-263-->[io.nlopez.smartlocation:library:3.2.11] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/dc7e85ebe588f8bb98e0f8c64251dba7/jetified-library-3.2.11/AndroidManifest.xml:24:13-37
-264        <service
-264-->[io.nlopez.smartlocation:library:3.2.11] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/dc7e85ebe588f8bb98e0f8c64251dba7/jetified-library-3.2.11/AndroidManifest.xml:25:9-27:40
-265            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
-265-->[io.nlopez.smartlocation:library:3.2.11] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/dc7e85ebe588f8bb98e0f8c64251dba7/jetified-library-3.2.11/AndroidManifest.xml:26:13-120
-266            android:exported="false" />
-266-->[io.nlopez.smartlocation:library:3.2.11] /Users/roshankarki/.gradle/caches/transforms-2/files-2.1/dc7e85ebe588f8bb98e0f8c64251dba7/jetified-library-3.2.11/AndroidManifest.xml:27:13-37
-267    </application>
-268
-269</manifest>
+22-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:13:3-69
+22-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:13:20-67
+23    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+23-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:14:3-71
+23-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:14:20-68
+24    <uses-permission android:name="android.permission.READ_CALENDAR" />
+24-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:15:3-69
+24-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:15:20-67
+25    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+25-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:16:3-70
+25-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:16:20-68
+26    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+26-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:17:3-77
+26-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:17:20-75
+27    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+27-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:18:3-68
+27-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:18:20-66
+28    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+28-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:19:3-78
+28-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:19:20-76
+29    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+29-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:20:3-70
+29-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:20:20-68
+30    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+30-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:21:3-76
+30-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:21:20-74
+31    <uses-permission android:name="android.permission.WAKE_LOCK" />
+31-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:22:3-65
+31-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:22:20-63
+32    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+32-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:23:3-79
+32-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:23:20-77
+33    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+33-->[com.facebook.flipper:flipper:0.33.1] /Users/abesh/.gradle/caches/transforms-2/files-2.1/dab2a474389aa8a0b9039aa2d81b92c0/jetified-flipper-0.33.1/AndroidManifest.xml:16:5-76
+33-->[com.facebook.flipper:flipper:0.33.1] /Users/abesh/.gradle/caches/transforms-2/files-2.1/dab2a474389aa8a0b9039aa2d81b92c0/jetified-flipper-0.33.1/AndroidManifest.xml:16:22-73
+34    <uses-permission android:name="android.permission.STORAGE" />
+34-->[:expo-file-system] /Users/abesh/projects/chatapp_client/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-66
+34-->[:expo-file-system] /Users/abesh/projects/chatapp_client/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:22-63
+35    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+35-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-81
+35-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-78
+36    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+36-->[:expo-location] /Users/abesh/projects/chatapp_client/node_modules/expo/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-77
+36-->[:expo-location] /Users/abesh/projects/chatapp_client/node_modules/expo/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-74
+37    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- for android -->
+37-->[com.android.installreferrer:installreferrer:1.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/0e3b4f9a53f6c1ffc1c6496781d8a252/jetified-installreferrer-1.0/AndroidManifest.xml:9:5-110
+37-->[com.android.installreferrer:installreferrer:1.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/0e3b4f9a53f6c1ffc1c6496781d8a252/jetified-installreferrer-1.0/AndroidManifest.xml:9:22-107
+38    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+39    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+40    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+41    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+42    <!-- for Samsung -->
+43    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+43-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
+43-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:19:22-83
+44    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+44-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
+44-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:20:22-84
+45    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+45-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
+45-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:23:22-78
+46    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+46-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
+46-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:24:22-80
+47    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+47-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
+47-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:27:22-85
+48    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+48-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
+48-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
+49    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+49-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
+49-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
+50    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+50-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
+50-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
+51    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+51-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
+51-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
+52    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+52-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
+52-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
+53    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+53-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
+53-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
+54    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+54-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
+54-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
+55    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+55-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
+55-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
+56    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+56-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
+56-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
+57    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+57-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
+57-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
+58    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+58-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
+58-->[me.leolin:ShortcutBadger:1.1.22] /Users/abesh/.gradle/caches/transforms-2/files-2.1/46d32747f94432bdf90219a29fb33baf/ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
+59    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+59-->[io.nlopez.smartlocation:library:3.2.11] /Users/abesh/.gradle/caches/transforms-2/files-2.1/be2f9c529a49025a402ac06223c4f53e/jetified-library-3.2.11/AndroidManifest.xml:15:5-98
+59-->[io.nlopez.smartlocation:library:3.2.11] /Users/abesh/.gradle/caches/transforms-2/files-2.1/be2f9c529a49025a402ac06223c4f53e/jetified-library-3.2.11/AndroidManifest.xml:15:22-95
+60    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+60-->[io.nlopez.smartlocation:library:3.2.11] /Users/abesh/.gradle/caches/transforms-2/files-2.1/be2f9c529a49025a402ac06223c4f53e/jetified-library-3.2.11/AndroidManifest.xml:16:5-94
+60-->[io.nlopez.smartlocation:library:3.2.11] /Users/abesh/.gradle/caches/transforms-2/files-2.1/be2f9c529a49025a402ac06223c4f53e/jetified-library-3.2.11/AndroidManifest.xml:16:22-91
+61
+62    <application
+62-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:24:3-43:17
+63        android:name="com.chatapp.chatfrontend.MainApplication"
+63-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:24:16-47
+64        android:allowBackup="true"
+64-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:24:162-188
+65        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+65-->[androidx.core:core:1.2.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/dbfa41c1c8810f45415d97261982f948/core-1.2.0/AndroidManifest.xml:24:18-86
+66        android:debuggable="true"
+67        android:icon="@mipmap/ic_launcher"
+67-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:24:81-115
+68        android:label="@string/app_name"
+68-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:24:48-80
+69        android:roundIcon="@mipmap/ic_launcher_round"
+69-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:24:116-161
+70        android:theme="@style/AppTheme"
+70-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:24:189-220
+71        android:usesCleartextTraffic="true" >
+71-->/Users/abesh/projects/chatapp_client/android/app/src/debug/AndroidManifest.xml:6:18-53
+72        <meta-data
+72-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:25:5-126
+73            android:name="expo.modules.updates.EXPO_UPDATE_URL"
+73-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:25:16-67
+74            android:value="https://exp.host/@rosnk/chatapp_frontend" />
+74-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:25:68-124
+75        <meta-data
+75-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:26:5-93
+76            android:name="expo.modules.updates.EXPO_SDK_VERSION"
+76-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:26:16-68
+77            android:value="38.0.0" />
+77-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:26:69-91
+78        <meta-data
+78-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:27:5-82
+79            android:name="expo.modules.updates.ENABLED"
+79-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:27:16-59
+80            android:value="true" />
+80-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:27:60-80
+81        <meta-data
+81-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:28:5-105
+82            android:name="expo.modules.updates.EXPO_UPDATES_CHECK_ON_LAUNCH"
+82-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:28:16-80
+83            android:value="ALWAYS" />
+83-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:28:81-103
+84        <meta-data
+84-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:29:5-99
+85            android:name="expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS"
+85-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:29:16-79
+86            android:value="0" />
+86-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:29:80-97
+87
+88        <activity
+88-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:30:5-41:16
+89            android:name="com.chatapp.chatfrontend.MainActivity"
+89-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:30:15-43
+90            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+90-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:30:77-154
+91            android:label="@string/app_name"
+91-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:30:44-76
+92            android:launchMode="singleTask"
+92-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:30:155-186
+93            android:screenOrientation="portrait"
+93-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:30:276-312
+94            android:theme="@style/Theme.App.SplashScreen"
+94-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:30:230-275
+95            android:windowSoftInputMode="adjustResize" >
+95-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:30:187-229
+96            <intent-filter>
+96-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:31:7-34:23
+97                <action android:name="android.intent.action.MAIN" />
+97-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:32:9-60
+97-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:32:17-58
+98
+99                <category android:name="android.intent.category.LAUNCHER" />
+99-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:33:9-68
+99-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:33:19-66
+100            </intent-filter>
+101            <intent-filter>
+101-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:35:7-40:23
+102                <action android:name="android.intent.action.VIEW" />
+102-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:36:9-60
+102-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:36:17-58
+103
+104                <category android:name="android.intent.category.DEFAULT" />
+104-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:37:9-67
+104-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:37:19-65
+105                <category android:name="android.intent.category.BROWSABLE" />
+105-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:38:9-69
+105-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:38:19-67
+106
+107                <data android:scheme="com.chatapp.chatfrontend" />
+107-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:39:9-58
+107-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:39:15-56
+108            </intent-filter>
+109        </activity>
+110        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+110-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:42:5-81
+110-->/Users/abesh/projects/chatapp_client/android/app/src/main/AndroidManifest.xml:42:15-79
+111
+112        <meta-data
+112-->[:unimodules-react-native-adapter] /Users/abesh/projects/chatapp_client/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:91
+113            android:name="org.unimodules.core.AppLoader#react-native-headless"
+113-->[:unimodules-react-native-adapter] /Users/abesh/projects/chatapp_client/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-79
+114            android:value="org.unimodules.adapters.react.apploader.RNHeadlessAppLoader" />
+114-->[:unimodules-react-native-adapter] /Users/abesh/projects/chatapp_client/node_modules/@unimodules/react-native-adapter/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-88
+115
+116        <provider
+116-->[:react-native-image-picker] /Users/abesh/projects/chatapp_client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:10:9-18:20
+117            android:name="com.imagepicker.FileProvider"
+117-->[:react-native-image-picker] /Users/abesh/projects/chatapp_client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-56
+118            android:authorities="com.chatapp.chatfrontend.provider"
+118-->[:react-native-image-picker] /Users/abesh/projects/chatapp_client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-60
+119            android:exported="false"
+119-->[:react-native-image-picker] /Users/abesh/projects/chatapp_client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-37
+120            android:grantUriPermissions="true" >
+120-->[:react-native-image-picker] /Users/abesh/projects/chatapp_client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-47
+121            <meta-data
+121-->[:react-native-image-picker] /Users/abesh/projects/chatapp_client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-17:58
+122                android:name="android.support.FILE_PROVIDER_PATHS"
+122-->[:react-native-image-picker] /Users/abesh/projects/chatapp_client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:17-67
+123                android:resource="@xml/provider_paths" />
+123-->[:react-native-image-picker] /Users/abesh/projects/chatapp_client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-55
+124        </provider>
+125        <provider
+125-->[:expo-file-system] /Users/abesh/projects/chatapp_client/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:9-27:20
+126            android:name="expo.modules.filesystem.FileSystemFileProvider"
+126-->[:expo-file-system] /Users/abesh/projects/chatapp_client/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-74
+127            android:authorities="com.chatapp.chatfrontend.FileSystemFileProvider"
+127-->[:expo-file-system] /Users/abesh/projects/chatapp_client/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-74
+128            android:exported="false"
+128-->[:expo-file-system] /Users/abesh/projects/chatapp_client/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-37
+129            android:grantUriPermissions="true" >
+129-->[:expo-file-system] /Users/abesh/projects/chatapp_client/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-47
+130            <meta-data
+130-->[:react-native-image-picker] /Users/abesh/projects/chatapp_client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-17:58
+131                android:name="android.support.FILE_PROVIDER_PATHS"
+131-->[:react-native-image-picker] /Users/abesh/projects/chatapp_client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:17-67
+132                android:resource="@xml/file_system_provider_paths" />
+132-->[:react-native-image-picker] /Users/abesh/projects/chatapp_client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-55
+133        </provider> <!-- https://developer.android.com/guide/topics/manifest/provider-element.html -->
+134        <provider
+134-->[:expo-image-picker] /Users/abesh/projects/chatapp_client/node_modules/expo-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:9-22:20
+135            android:name="expo.modules.imagepicker.ImagePickerFileProvider"
+135-->[:expo-image-picker] /Users/abesh/projects/chatapp_client/node_modules/expo-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-76
+136            android:authorities="com.chatapp.chatfrontend.ImagePickerFileProvider"
+136-->[:expo-image-picker] /Users/abesh/projects/chatapp_client/node_modules/expo-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-75
+137            android:exported="false"
+137-->[:expo-image-picker] /Users/abesh/projects/chatapp_client/node_modules/expo-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-37
+138            android:grantUriPermissions="true" >
+138-->[:expo-image-picker] /Users/abesh/projects/chatapp_client/node_modules/expo-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-47
+139            <meta-data
+139-->[:react-native-image-picker] /Users/abesh/projects/chatapp_client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-17:58
+140                android:name="android.support.FILE_PROVIDER_PATHS"
+140-->[:react-native-image-picker] /Users/abesh/projects/chatapp_client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:17-67
+141                android:resource="@xml/image_picker_provider_paths" />
+141-->[:react-native-image-picker] /Users/abesh/projects/chatapp_client/node_modules/react-native-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-55
+142        </provider>
+143
+144        <service
+144-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:9-20:19
+145            android:name="expo.modules.notifications.FirebaseListenerService"
+145-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-78
+146            android:exported="false" >
+146-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-37
+147            <intent-filter android:priority="-1" >
+147-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:29
+147-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:28-49
+148                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+148-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-78
+148-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:25-75
+149            </intent-filter>
+150        </service>
+151        <service
+151-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:9-28:19
+152            android:name="expo.modules.notifications.notifications.service.ExpoNotificationsService"
+152-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-101
+153            android:exported="false"
+153-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:13-37
+154            android:permission="android.permission.BIND_JOB_SERVICE" >
+154-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-69
+155            <intent-filter android:order="-1" >
+155-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-27:29
+155-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:28-46
+156                <action android:name="expo.modules.notifications.NOTIFICATION_EVENT" />
+156-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:17-88
+156-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:25-85
+157            </intent-filter>
+158        </service>
+159        <service
+159-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:9-32:72
+160            android:name="expo.modules.notifications.notifications.service.ExpoNotificationSchedulerService"
+160-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-109
+161            android:exported="false"
+161-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:13-37
+162            android:permission="android.permission.BIND_JOB_SERVICE" />
+162-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:13-69
+163
+164        <receiver
+164-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:34:9-44:20
+165            android:name="expo.modules.notifications.notifications.service.ScheduledAlarmReceiver"
+165-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:13-99
+166            android:enabled="true"
+166-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-35
+167            android:exported="false" >
+167-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:13-37
+168            <intent-filter>
+168-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:13-43:29
+169                <action android:name="expo.modules.notifications.TRIGGER_EVENT" />
+169-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:17-83
+169-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:25-80
+170                <action android:name="android.intent.action.BOOT_COMPLETED" />
+170-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:40:17-79
+170-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:40:25-76
+171                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+171-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:41:17-82
+171-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:41:25-79
+172                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+172-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:17-82
+172-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:42:25-79
+173            </intent-filter>
+174        </receiver>
+175        <receiver
+175-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:45:9-48:40
+176            android:name="expo.modules.notifications.notifications.service.NotificationResponseReceiver"
+176-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:46:13-105
+177            android:enabled="true"
+177-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:47:13-35
+178            android:exported="false" />
+178-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:48:13-37
+179
+180        <service
+180-->[:expo-location] /Users/abesh/projects/chatapp_client/node_modules/expo/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:40
+181            android:name="expo.modules.location.services.LocationTaskService"
+181-->[:expo-location] /Users/abesh/projects/chatapp_client/node_modules/expo/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-78
+182            android:exported="false" />
+182-->[:expo-location] /Users/abesh/projects/chatapp_client/node_modules/expo/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+183        <!--
+184             FirebaseMessagingService performs security checks at runtime,
+185             but set to not exported to explicitly avoid allowing another app to call it.
+186        -->
+187        <service
+187-->[com.google.firebase:firebase-messaging:20.1.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/02c2c5479634a5f757f3c4827dae8ba7/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:28:9-34:19
+188            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+188-->[com.google.firebase:firebase-messaging:20.1.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/02c2c5479634a5f757f3c4827dae8ba7/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:29:13-82
+189            android:exported="false" >
+189-->[com.google.firebase:firebase-messaging:20.1.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/02c2c5479634a5f757f3c4827dae8ba7/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:30:13-37
+190            <intent-filter android:priority="-500" >
+190-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:29
+190-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:28-49
+191                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+191-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-78
+191-->[:expo-notifications] /Users/abesh/projects/chatapp_client/node_modules/expo-notifications/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:25-75
+192            </intent-filter>
+193        </service>
+194        <service
+194-->[com.google.firebase:firebase-messaging:20.1.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/02c2c5479634a5f757f3c4827dae8ba7/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:35:9-41:19
+195            android:name="com.google.firebase.components.ComponentDiscoveryService"
+195-->[com.google.firebase:firebase-messaging:20.1.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/02c2c5479634a5f757f3c4827dae8ba7/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:36:13-84
+196            android:directBootAware="true"
+196-->[com.google.firebase:firebase-common:19.3.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/23e0a0bf80125aafc23ff0958766a48b/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+197            android:exported="false" >
+197-->[com.google.firebase:firebase-messaging:20.1.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/02c2c5479634a5f757f3c4827dae8ba7/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:37:13-37
+198            <meta-data
+198-->[com.google.firebase:firebase-messaging:20.1.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/02c2c5479634a5f757f3c4827dae8ba7/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:38:13-40:85
+199                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+199-->[com.google.firebase:firebase-messaging:20.1.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/02c2c5479634a5f757f3c4827dae8ba7/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:39:17-119
+200                android:value="com.google.firebase.components.ComponentRegistrar" />
+200-->[com.google.firebase:firebase-messaging:20.1.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/02c2c5479634a5f757f3c4827dae8ba7/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:40:17-82
+201            <meta-data
+201-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/abesh/.gradle/caches/transforms-2/files-2.1/17f95744325d0f1bda31c05825fccaf3/firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
+202                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+202-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/abesh/.gradle/caches/transforms-2/files-2.1/17f95744325d0f1bda31c05825fccaf3/firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
+203                android:value="com.google.firebase.components.ComponentRegistrar" />
+203-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/abesh/.gradle/caches/transforms-2/files-2.1/17f95744325d0f1bda31c05825fccaf3/firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
+204            <meta-data
+204-->[com.google.firebase:firebase-iid:20.0.2] /Users/abesh/.gradle/caches/transforms-2/files-2.1/a5bfd9c1e524290d1e5e34cbdd64b069/firebase-iid-20.0.2/AndroidManifest.xml:32:13-34:85
+205                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+205-->[com.google.firebase:firebase-iid:20.0.2] /Users/abesh/.gradle/caches/transforms-2/files-2.1/a5bfd9c1e524290d1e5e34cbdd64b069/firebase-iid-20.0.2/AndroidManifest.xml:33:17-96
+206                android:value="com.google.firebase.components.ComponentRegistrar" />
+206-->[com.google.firebase:firebase-iid:20.0.2] /Users/abesh/.gradle/caches/transforms-2/files-2.1/a5bfd9c1e524290d1e5e34cbdd64b069/firebase-iid-20.0.2/AndroidManifest.xml:34:17-82
+207        </service>
+208        <service
+208-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/7cfadab1097ec23cef362f527c0bd2ea/transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
+209            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+209-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/7cfadab1097ec23cef362f527c0bd2ea/transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
+210            android:exported="false" >
+210-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/7cfadab1097ec23cef362f527c0bd2ea/transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
+211            <meta-data
+211-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/7cfadab1097ec23cef362f527c0bd2ea/transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
+212                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+212-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/7cfadab1097ec23cef362f527c0bd2ea/transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
+213                android:value="cct" />
+213-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/7cfadab1097ec23cef362f527c0bd2ea/transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
+214        </service>
+215        <service
+215-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/534f59c9fcf953f781a6edb4fea2bcac/transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
+216            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+216-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/534f59c9fcf953f781a6edb4fea2bcac/transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
+217            android:exported="false"
+217-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/534f59c9fcf953f781a6edb4fea2bcac/transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
+218            android:permission="android.permission.BIND_JOB_SERVICE" >
+218-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/534f59c9fcf953f781a6edb4fea2bcac/transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
+219        </service>
+220
+221        <receiver
+221-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/534f59c9fcf953f781a6edb4fea2bcac/transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
+222            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+222-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/534f59c9fcf953f781a6edb4fea2bcac/transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
+223            android:exported="false" />
+223-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/534f59c9fcf953f781a6edb4fea2bcac/transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
+224
+225        <service
+225-->[androidx.room:room-runtime:2.1.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/1f9600edb87ec7249ed2f749439da712/room-runtime-2.1.0/AndroidManifest.xml:25:9-27:40
+226            android:name="androidx.room.MultiInstanceInvalidationService"
+226-->[androidx.room:room-runtime:2.1.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/1f9600edb87ec7249ed2f749439da712/room-runtime-2.1.0/AndroidManifest.xml:26:13-74
+227            android:exported="false" />
+227-->[androidx.room:room-runtime:2.1.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/1f9600edb87ec7249ed2f749439da712/room-runtime-2.1.0/AndroidManifest.xml:27:13-37
+228
+229        <receiver
+229-->[com.google.firebase:firebase-iid:20.0.2] /Users/abesh/.gradle/caches/transforms-2/files-2.1/a5bfd9c1e524290d1e5e34cbdd64b069/firebase-iid-20.0.2/AndroidManifest.xml:37:9-44:20
+230            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+230-->[com.google.firebase:firebase-iid:20.0.2] /Users/abesh/.gradle/caches/transforms-2/files-2.1/a5bfd9c1e524290d1e5e34cbdd64b069/firebase-iid-20.0.2/AndroidManifest.xml:38:13-78
+231            android:exported="true"
+231-->[com.google.firebase:firebase-iid:20.0.2] /Users/abesh/.gradle/caches/transforms-2/files-2.1/a5bfd9c1e524290d1e5e34cbdd64b069/firebase-iid-20.0.2/AndroidManifest.xml:39:13-36
+232            android:permission="com.google.android.c2dm.permission.SEND" >
+232-->[com.google.firebase:firebase-iid:20.0.2] /Users/abesh/.gradle/caches/transforms-2/files-2.1/a5bfd9c1e524290d1e5e34cbdd64b069/firebase-iid-20.0.2/AndroidManifest.xml:40:13-73
+233            <intent-filter>
+233-->[com.google.firebase:firebase-iid:20.0.2] /Users/abesh/.gradle/caches/transforms-2/files-2.1/a5bfd9c1e524290d1e5e34cbdd64b069/firebase-iid-20.0.2/AndroidManifest.xml:41:13-43:29
+234                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+234-->[com.google.firebase:firebase-iid:20.0.2] /Users/abesh/.gradle/caches/transforms-2/files-2.1/a5bfd9c1e524290d1e5e34cbdd64b069/firebase-iid-20.0.2/AndroidManifest.xml:42:17-81
+234-->[com.google.firebase:firebase-iid:20.0.2] /Users/abesh/.gradle/caches/transforms-2/files-2.1/a5bfd9c1e524290d1e5e34cbdd64b069/firebase-iid-20.0.2/AndroidManifest.xml:42:25-78
+235            </intent-filter>
+236        </receiver>
+237
+238        <provider
+238-->[com.google.firebase:firebase-common:19.3.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/23e0a0bf80125aafc23ff0958766a48b/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+239            android:name="com.google.firebase.provider.FirebaseInitProvider"
+239-->[com.google.firebase:firebase-common:19.3.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/23e0a0bf80125aafc23ff0958766a48b/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+240            android:authorities="com.chatapp.chatfrontend.firebaseinitprovider"
+240-->[com.google.firebase:firebase-common:19.3.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/23e0a0bf80125aafc23ff0958766a48b/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+241            android:exported="false"
+241-->[com.google.firebase:firebase-common:19.3.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/23e0a0bf80125aafc23ff0958766a48b/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+242            android:initOrder="100" />
+242-->[com.google.firebase:firebase-common:19.3.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/23e0a0bf80125aafc23ff0958766a48b/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+243
+244        <activity
+244-->[com.google.android.gms:play-services-base:17.0.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/ab9598a8ca8aa96512c99999c7acad33/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+245            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+245-->[com.google.android.gms:play-services-base:17.0.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/ab9598a8ca8aa96512c99999c7acad33/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+246            android:exported="false"
+246-->[com.google.android.gms:play-services-base:17.0.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/ab9598a8ca8aa96512c99999c7acad33/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+247            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+247-->[com.google.android.gms:play-services-base:17.0.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/ab9598a8ca8aa96512c99999c7acad33/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+248
+249        <meta-data
+249-->[com.google.android.gms:play-services-basement:17.0.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/8f58db057553050f766370c036764436/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+250            android:name="com.google.android.gms.version"
+250-->[com.google.android.gms:play-services-basement:17.0.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/8f58db057553050f766370c036764436/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+251            android:value="@integer/google_play_services_version" />
+251-->[com.google.android.gms:play-services-basement:17.0.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/8f58db057553050f766370c036764436/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+252
+253        <provider
+253-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/70a35ff34a52e788ebdff6ceaf2ae604/lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+254            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+254-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/70a35ff34a52e788ebdff6ceaf2ae604/lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+255            android:authorities="com.chatapp.chatfrontend.lifecycle-process"
+255-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/70a35ff34a52e788ebdff6ceaf2ae604/lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+256            android:exported="false"
+256-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/70a35ff34a52e788ebdff6ceaf2ae604/lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+257            android:multiprocess="true" />
+257-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/abesh/.gradle/caches/transforms-2/files-2.1/70a35ff34a52e788ebdff6ceaf2ae604/lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+258
+259        <service
+259-->[io.nlopez.smartlocation:library:3.2.11] /Users/abesh/.gradle/caches/transforms-2/files-2.1/be2f9c529a49025a402ac06223c4f53e/jetified-library-3.2.11/AndroidManifest.xml:19:9-21:40
+260            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
+260-->[io.nlopez.smartlocation:library:3.2.11] /Users/abesh/.gradle/caches/transforms-2/files-2.1/be2f9c529a49025a402ac06223c4f53e/jetified-library-3.2.11/AndroidManifest.xml:20:13-132
+261            android:exported="false" />
+261-->[io.nlopez.smartlocation:library:3.2.11] /Users/abesh/.gradle/caches/transforms-2/files-2.1/be2f9c529a49025a402ac06223c4f53e/jetified-library-3.2.11/AndroidManifest.xml:21:13-37
+262        <service
+262-->[io.nlopez.smartlocation:library:3.2.11] /Users/abesh/.gradle/caches/transforms-2/files-2.1/be2f9c529a49025a402ac06223c4f53e/jetified-library-3.2.11/AndroidManifest.xml:22:9-24:40
+263            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
+263-->[io.nlopez.smartlocation:library:3.2.11] /Users/abesh/.gradle/caches/transforms-2/files-2.1/be2f9c529a49025a402ac06223c4f53e/jetified-library-3.2.11/AndroidManifest.xml:23:13-127
+264            android:exported="false" />
+264-->[io.nlopez.smartlocation:library:3.2.11] /Users/abesh/.gradle/caches/transforms-2/files-2.1/be2f9c529a49025a402ac06223c4f53e/jetified-library-3.2.11/AndroidManifest.xml:24:13-37
+265        <service
+265-->[io.nlopez.smartlocation:library:3.2.11] /Users/abesh/.gradle/caches/transforms-2/files-2.1/be2f9c529a49025a402ac06223c4f53e/jetified-library-3.2.11/AndroidManifest.xml:25:9-27:40
+266            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
+266-->[io.nlopez.smartlocation:library:3.2.11] /Users/abesh/.gradle/caches/transforms-2/files-2.1/be2f9c529a49025a402ac06223c4f53e/jetified-library-3.2.11/AndroidManifest.xml:26:13-120
+267            android:exported="false" />
+267-->[io.nlopez.smartlocation:library:3.2.11] /Users/abesh/.gradle/caches/transforms-2/files-2.1/be2f9c529a49025a402ac06223c4f53e/jetified-library-3.2.11/AndroidManifest.xml:27:13-37
+268    </application>
+269
+270</manifest>

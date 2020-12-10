@@ -118,36 +118,6 @@ const recentConversationTabStackNavigation = ({ navigation }) => {
           // ),
         })}
       />
-
-      {/* <Stack.Screen
-        name="Find Contact"
-        component={ContactScreenTabFindContact}
-        options={{
-          headerRight: () => (
-            <Button
-              onPress={() => alert("This is a button!")}
-              title="Info"
-              color="#fff"
-            />
-          ),
-        }}
-      />
-
-      <Stack.Screen
-        name="Add Contact"
-        component={AddContact}
-        options={{
-          headerRight: () => (
-            <Button
-              onPress={() => alert("This is a button!")}
-              title="Info"
-              color="#fff"
-            />
-          ),
-        }}
-      />
-
-      <Stack.Screen name="MessageScreen" component={MessageScreen} /> */}
     </Stack.Navigator>
   );
 };

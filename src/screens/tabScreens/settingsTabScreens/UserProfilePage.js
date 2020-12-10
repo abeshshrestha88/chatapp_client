@@ -148,7 +148,6 @@ const UserProfilePage = ({
         quality: 1,
       });
       if (!result.cancelled) {
-        console.log("image after picking is", result.uri);
         setImageAction(result.uri);
         setUserProfileAction(
           {

@@ -44,6 +44,7 @@ const ChatTabNavigation = ({
         const requestPermissions = async () => {
           let andoidContactPermission = await PermissionsAndroid.request(
             PermissionsAndroid.PERMISSIONS.READ_CONTACTS,
+            PermissionsAndroid.PERMISSIONS.WRITE_CONTACTS,
             {
               title: "Contacts",
               message: "This app would like to view your contacts.",

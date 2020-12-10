@@ -67,7 +67,9 @@ const ContactsTabStackNavigation = ({ navigation }) => {
       <Stack.Screen
         name="Find Contact"
         component={ContactScreenTabFindContact}
-        options={{}}
+        options={{
+          title: "Create Contact",
+        }}
       />
       <Stack.Screen name="Add Contact" component={AddContact} options={{}} />
       <Stack.Screen
