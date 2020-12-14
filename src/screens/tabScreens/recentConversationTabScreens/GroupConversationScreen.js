@@ -12,7 +12,10 @@ import {
 
 import { connect } from "react-redux";
 import Search from "../../components/Search";
-import { getGroupConversationAction } from "../../../redux/actions/groupMessageAction";
+import {
+  getGroupConversationAction,
+  clearGroupMessagesAction,
+} from "../../../redux/actions/groupMessageAction";
 import {
   getGroupMessagesAction,
   clearMessagesAction,
@@ -34,6 +37,7 @@ const GroupConversationScreen = ({
   clearMessagesAction,
   groupConversationList,
   messages,
+  clearGroupMessagesAction,
 }) => {
   const [keyTyped, setKeyTyped] = useState("");
   const [localGroupConversationList, setLocalGroupConversationList] = useState(
@@ -104,16 +108,14 @@ const GroupConversationScreen = ({
     // contactObject.phone_number = item.phone_number;
     // contactObject.profile_img_url = item.profile_img_url;
 
-    // clearMessagesAction();
+    clearGroupMessagesAction();
     getGroupMessagesAction(item.id);
     // getGroupMessagesAction(userId, item.contact_id);
     navigation.navigate("GroupMessageScreen", {
       currentUserId: userId,
       contact: contactObject,
-      conversationId: item.conversation_id,
       name: item.name,
       image: item.profile_img_url,
-      notification_token: item.notification_token,
       groupId: item.id,
     });
   };
@@ -262,7 +264,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = {
   getGroupConversationAction,
   getGroupMessagesAction,
-  clearMessagesAction,
+  clearGroupMessagesAction,
 };
 
 export default connect(

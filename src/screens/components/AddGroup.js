@@ -219,33 +219,25 @@ const AddGroup = ({
 
   const Item = ({ contact }) => {
     return (
-      <TouchableOpacity
-        onPress={() => {
-          handleContactPress(contact);
-        }}
-      >
-        <View style={styles.contactRow}>
-          {contact.user_exist && (
-            <CheckBox
-              title="Click Here"
-              checked={contact.checked ? true : false}
-              onPress={() => {
-                handleCheckBoxChange(contact);
-              }}
-              title=""
-            />
-          )}
+      <View style={styles.contactRow}>
+        {contact.user_exist && (
+          <CheckBox
+            title="Click Here"
+            checked={contact.checked ? true : false}
+            onPress={() => {
+              handleCheckBoxChange(contact);
+            }}
+            title=""
+          />
+        )}
 
-          {contact.user_exist && (
-            <View style={styles.image}>
-              {imageJSX(contact.profile_img_url)}
-            </View>
-          )}
-          <View style={styles.label}>
-            {contact.user_exist && <Text>{contact.name}</Text>}
-          </View>
+        {contact.user_exist && (
+          <View style={styles.image}>{imageJSX(contact.profile_img_url)}</View>
+        )}
+        <View style={styles.label}>
+          {contact.user_exist && <Text>{contact.name}</Text>}
         </View>
-      </TouchableOpacity>
+      </View>
     );
   };
 
@@ -291,8 +283,20 @@ const AddGroup = ({
     clearGroupMessagesAction();
 
     navigation.navigate("GroupMessageScreen", { groupId: id });
+    localContactList.map((contact) => {
+      contact.data.map((item) => {
+        item.checked = false;
+      });
+    });
   };
-
+  const handleCancel = async () => {
+    navigation.navigate("Recent Conversation");
+    localContactList.map((contact) => {
+      contact.data.map((item) => {
+        item.checked = false;
+      });
+    });
+  };
   return (
     <SafeAreaView style={styles.safeAreaWrapper}>
       <View style={styles.screenWrapper}>
@@ -305,6 +309,9 @@ const AddGroup = ({
         <View style={styles.buttonWrapper}>
           <TouchableOpacity onPress={handleDone} style={styles.button}>
             <Text style={{ fontSize: 18, color: "#ffffff" }}>Done</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={handleCancel} style={styles.button}>
+            <Text style={{ fontSize: 18, color: "#ffffff" }}>Cancel</Text>
           </TouchableOpacity>
         </View>
         <View>{sectionJSX()}</View>

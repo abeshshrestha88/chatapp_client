@@ -48,16 +48,16 @@ export const getGroupConversationAction = (userId) => {
 };
 
 export const getGroupMessagesAction = (groupId) => {
-  console.log("inside action.....");
+  console.log("inside action.....", groupId);
   return async (dispatch) => {
     try {
       const res = await ApiServer.get("/api/group-messages/get-messages", {
         params: { groupId },
       });
 
-      console.log(res);
+      console.log("Before condition", res.data.success);
 
-      if (res.data.success) {
+      if (res.data.success == true) {
         console.log(
           "group msg received inside action is",
           res.data.groupMessages
@@ -68,9 +68,13 @@ export const getGroupMessagesAction = (groupId) => {
           payload: res.data.groupMessages,
         });
       } else {
+        // console.log("inside else", res);
+        dispatch({
+          type: GET_GROUP_MSG_FROM_SERVER,
+          payload: res.data.groupMessages,
+        });
       }
     } catch (error) {
-      console.log("error:");
       console.log(error);
     }
   };

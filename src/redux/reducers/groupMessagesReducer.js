@@ -55,7 +55,6 @@ const messagesReducer = (
         ...state,
 
         group_messages: action.payload,
-        // group_messages: action.payload,
       };
 
     // case SENT_SOCKET_MESSAGE:

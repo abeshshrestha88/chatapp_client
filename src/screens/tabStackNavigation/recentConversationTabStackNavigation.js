@@ -65,7 +65,7 @@ const recentConversationTabStackNavigation = ({ navigation }) => {
           headerTitleAlign: "center",
           headerShown: true,
           // headerTransparent: true,
-          // headerLeft: null,
+          headerLeft: null,
           gesturesEnabled: false,
           title: "Create Group",
         }}
