@@ -59,7 +59,7 @@ const AddGroup = ({
     //   </pre>
     // );
     const filteredUser = getFriendFilter(contactList);
-    setLocalContactList(contactList);
+    setLocalContactList(filteredUser);
 
     const unsubscribe = navigation.addListener("focus", () => {
       getContactsForUser(currentUserId);
@@ -82,12 +82,29 @@ const AddGroup = ({
   // };
 
   const getFriendFilter = (contactList) => {
-    const filteredUserMap = contactList.filter((contact) => {
-      // console.log(contact);
-      return contact.data;
+    const filteredUserMap = contactList.map((contact) => {
+      const userExistArray = contact.data.filter((existUser) => {
+        // if (existUser.user_exist == true) {
+
+        //   return
+        //   console.log(contact.title);
+        //   console.log(contact.data);
+        // }
+        return existUser.user_exist == true;
+      });
+
+      return {
+        title: contact.title,
+        data: userExistArray,
+      };
+
+      // return contact.data;
     });
-    // console.log("Filtered User");
-    // console.log(filteredUserMap);
+
+    const returnData = filteredUserMap.filter((userExist) => {
+      return userExist.data.length != 0;
+    });
+    return returnData;
   };
 
   const getContactArrayWithFirstLetter = (firstLetter, contactList) => {
