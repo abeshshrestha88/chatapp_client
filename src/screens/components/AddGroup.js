@@ -52,21 +52,13 @@ const AddGroup = ({
   const [groupList, setGroupList] = useState([]);
 
   useEffect(() => {
-    console.log("contact list is:", contactList);
-    //TODO: GET CONTACTS FROM PHONE
-
-    // (async () => {
-    //   const { status } = await ContactsFromPhone.requestPermissionsAsync();
-    //   if (status === "granted") {
-    //     const { data } = await ContactsFromPhone.getContactsAsync({
-    //       fields: [ContactsFromPhone.Fields.Emails],
-    //     });
-
-    //     if (data.length > 0) {
-    //       const phoneContacts = data;
-    //     }
-    //   }
-    // })();
+    // console.log("contact list is:", contactList);
+    // console.log(
+    //   <pre>
+    //     <code>{JSON.stringify(contactList, null, 4)}</code>
+    //   </pre>
+    // );
+    const filteredUser = getFriendFilter(contactList);
     setLocalContactList(contactList);
 
     const unsubscribe = navigation.addListener("focus", () => {
@@ -75,6 +67,28 @@ const AddGroup = ({
 
     return unsubscribe;
   }, [navigation, contactList]);
+
+  // const getFriendFilter = (contactList) => {
+  //   const filteredUserMap = contactList.map((contact) => {
+  //     const filteredUser = contact.data.filter((arrayItem) => {
+  //       console.log("array itme");
+  //       console.log(arrayItem);
+  //       return arrayItem.user_exist == true;
+  //     });
+  //     return filteredUser;
+  //   });
+  //   // console.log("Filtered User");
+  //   // console.log(filteredUserMap);
+  // };
+
+  const getFriendFilter = (contactList) => {
+    const filteredUserMap = contactList.filter((contact) => {
+      // console.log(contact);
+      return contact.data;
+    });
+    // console.log("Filtered User");
+    // console.log(filteredUserMap);
+  };
 
   const getContactArrayWithFirstLetter = (firstLetter, contactList) => {
     return contactList.filter((contact) => {
@@ -194,18 +208,24 @@ const AddGroup = ({
         }}
       >
         <View style={styles.contactRow}>
-          <CheckBox
-            title="Click Here"
-            checked={contact.checked ? true : false}
-            onPress={() => {
-              handleCheckBoxChange(contact);
-            }}
-            title=""
-          />
+          {contact.user_exist && (
+            <CheckBox
+              title="Click Here"
+              checked={contact.checked ? true : false}
+              onPress={() => {
+                handleCheckBoxChange(contact);
+              }}
+              title=""
+            />
+          )}
 
-          <View style={styles.image}>{imageJSX(contact.profile_img_url)}</View>
+          {contact.user_exist && (
+            <View style={styles.image}>
+              {imageJSX(contact.profile_img_url)}
+            </View>
+          )}
           <View style={styles.label}>
-            <Text>{contact.name}</Text>
+            {contact.user_exist && <Text>{contact.name}</Text>}
           </View>
         </View>
       </TouchableOpacity>

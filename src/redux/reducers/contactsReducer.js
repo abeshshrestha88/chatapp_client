@@ -96,7 +96,7 @@ const contactsReducer = (
 
       const contactWithSectionTitle = getContactWithSection(action.payload);
 
-      console.log("contact with section is", contactWithSectionTitle);
+      // console.log("contact with section is", contactWithSectionTitle);
 
       console.log(contactWithSectionTitle[0].data);
 

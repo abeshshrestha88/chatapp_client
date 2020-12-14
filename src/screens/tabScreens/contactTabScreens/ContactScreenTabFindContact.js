@@ -10,7 +10,7 @@ import {
 import ButtonDone from "../../components/Button";
 import { connect } from "react-redux";
 import CountryListModel from "../../registration/components/CountryListModel";
-
+import { pullPhoneContactList } from "../../../redux/actions/contactsAction";
 import ApiServer from "../../../api/ApiServer";
 import { set } from "lodash";
 import {
@@ -30,6 +30,7 @@ const ContactScreenTabFindContact = ({
   filterSearchListAction,
   selectedCountryAction,
   resetCountryAction,
+  pullPhoneContactList,
 }) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -63,7 +64,6 @@ const ContactScreenTabFindContact = ({
   }, []);
 
   const handleAddContactSubmit = async () => {
-    alert("Pressed");
     const countryCode = countryDetails.phonecode;
 
     var addToPhone = {
@@ -73,9 +73,9 @@ const ContactScreenTabFindContact = ({
           email: email,
         },
       ],
-      // displayName: `${lastName} ${firstName}`
-      familyName: lastName,
-      givenName: firstName,
+      displayName: `${firstName} ${lastName}`,
+      // familyName: lastName,
+      // givenName: firstName,
       phoneNumbers: [
         {
           label: "mobile",
@@ -83,7 +83,39 @@ const ContactScreenTabFindContact = ({
         },
       ],
     };
-    // await Contacts.addContact(addToPhone);
+    // let newContact = await Contacts.addContact(addToPhone);
+
+    Contacts.openContactForm(addToPhone).then((contact) => {
+      // Contacts.getAll().then((contact) => {
+      //   pullPhoneContactList(contact, userId);
+      //   navigation.navigate("ContactScreen");
+      // });
+      Contacts.checkPermission().then((permission) => {
+        if (permission === "undefined") {
+          alert("undefined");
+          // Contacts.requestPermission().then((permission) => {
+
+          // });
+        }
+        if (permission === "authorized") {
+          Contacts.getAll().then((contact) => {
+            pullPhoneContactList(contact, userId);
+            navigation.navigate("ContactScreen");
+          });
+        }
+        if (permission === "denied") {
+          alert("denied");
+        }
+      });
+    });
+
+    // if (newContact) {
+    //   // Contacts.getAll().then((contactList) => {
+    //   //   navigation.navigate("ContactScreen");
+    //   // });
+    //   navigation.navigate("ContactScreen");
+    //   // });
+    // }
     // try {
     //   console.log("before calling api!!!!");
     //   const res = await ApiServer.post("/api/contacts/find", {
@@ -231,6 +263,7 @@ const mapDispatchToProps = {
   filterSearchListAction: filterSearchListAction,
   selectedCountryAction: selectCountry,
   resetCountryAction: resetCountryAction,
+  pullPhoneContactList,
 };
 
 export default connect(
