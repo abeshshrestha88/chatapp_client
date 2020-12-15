@@ -26,6 +26,7 @@ const groupMessageScreen = ({
     console.log("inside gorup msg screen");
     console.log("hi");
     console.log("group id is: ", route.params.groupId);
+    console.log("group members are: ", route.params.groupMembers);
 
     socket.on("newGroupMessage", (data) => {
       console.log("before calling action", data);

@@ -9,7 +9,7 @@ import {
   FlatList,
   Image,
 } from "react-native";
-
+import { MaterialIcons } from "@expo/vector-icons";
 import { connect } from "react-redux";
 import Search from "../../components/Search";
 import { getConversationAction } from "../../../redux/actions/conversationAction";
@@ -227,6 +227,20 @@ const OneToOneConversationScreen = ({
           <Search handleSearch={handleSearch} placeholderTitle="Search" />
         </View>
         <View>{flastListJSX()}</View>
+        <View style={styles.btnWrapper}>
+          <TouchableOpacity
+            onPress={() => {
+              navigation.navigate("NewMessage");
+            }}
+          >
+            <MaterialIcons
+              name="message"
+              size={24}
+              color="powderblue"
+              style={styles.btn}
+            />
+          </TouchableOpacity>
+        </View>
       </View>
     </SafeAreaView>
   );
@@ -279,6 +293,18 @@ const styles = StyleSheet.create({
   },
   image: {
     marginRight: 15,
+  },
+  btn: {
+    width: 60,
+    height: 60,
+    borderRadius: 50,
+    borderWidth: 1,
+    alignSelf: "center",
+    // paddingTop: 10,
+  },
+  btnWrapper: {
+    justifyContent: "center",
+    textAlign: "center",
   },
 
   profileLogo: {

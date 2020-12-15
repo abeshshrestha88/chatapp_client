@@ -72,6 +72,7 @@ const ContactsTabStackNavigation = ({ navigation }) => {
         }}
       />
       <Stack.Screen name="Add Contact" component={AddContact} options={{}} />
+
       <Stack.Screen
         name="MessageScreen"
         component={MessageScreen}

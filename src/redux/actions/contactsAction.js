@@ -29,12 +29,17 @@ export const filterContactList = (searchText) => {
   return { type: FILTER_CONTACT_LIST, payload: searchText };
 };
 
-export const AddContactsToGroup = async (currentUserId, groupList) => {
+export const AddContactsToGroup = async (
+  currentUserId,
+  groupList,
+  groupName
+) => {
   try {
     // console.log("add contact to group called with", groupList);
     const res = await ApiServer.post("/api/groups/add-group", {
       currentUserId,
       groupList,
+      groupName,
     });
 
     console.log("data after calliong add group", res.data);

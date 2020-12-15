@@ -9,6 +9,8 @@ import {
 } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import AddGroup from "../components/AddGroup";
+import NewMessageTab from "../components/NewMessageTab";
+
 import { createStackNavigator } from "@react-navigation/stack";
 import { CommonActions } from "@react-navigation/native";
 import { connect } from "react-redux";
@@ -72,6 +74,19 @@ const recentConversationTabStackNavigation = ({ navigation }) => {
       />
 
       <Stack.Screen
+        name="NewMessage"
+        component={NewMessageTab}
+        options={{
+          headerTitleAlign: "center",
+          headerShown: true,
+          // headerTransparent: true,
+          // headerLeft: null,
+          gesturesEnabled: false,
+          title: "New Message",
+        }}
+      />
+
+      <Stack.Screen
         name="MessageScreen"
         component={MessageScreen}
         options={({ route, navigation }) => ({
@@ -103,6 +118,17 @@ const recentConversationTabStackNavigation = ({ navigation }) => {
         options={({ route, navigation }) => ({
           headerLeft: (props) => (
             <HeaderBackButton navigation={navigation} {...props} />
+          ),
+          headerTitle: () => (
+            <View style={styles.headerTitle}>
+              {/* <Image
+                style={styles.headerImage}
+                source={{
+                  uri: route.params.image,
+                }}
+              /> */}
+              <Text style={styles.headerText}>{route.params.groupName}</Text>
+            </View>
           ),
 
           // headerTitle: () => (

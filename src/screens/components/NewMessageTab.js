@@ -11,7 +11,6 @@ import {
   SafeAreaView,
 } from "react-native";
 import Search from "../components/Search";
-import { CheckBox } from "react-native-elements";
 
 //TODO: GET CONTACTS FROM PHONE
 // import * as ContactsFromPhone from "expo-contacts";
@@ -31,7 +30,6 @@ import { getConversationIdAction } from "../../redux/actions/conversationAction"
 import { FontAwesome5 } from "@expo/vector-icons";
 import DialogInput from "react-native-dialog-input";
 import { AddContactsToGroup } from "../../redux/actions/contactsAction";
-import { clearGroupMessagesAction } from "../../redux/actions/groupMessageAction";
 
 const AddGroup = ({
   route,
@@ -42,16 +40,9 @@ const AddGroup = ({
   filterContactList,
   getMessagesAction,
   clearMessagesAction,
-  clearGroupMessagesAction,
 }) => {
-  const [addScreenModelVisible, setAddScreenModelVisible] = useState(false);
-  const [modalVisible, setModalVisible] = useState(false);
   const [localContactList, setLocalContactList] = useState([]);
   const [keyTyped, setKeyTyped] = useState("");
-  const [checked, setChecked] = useState(false);
-  const [groupList, setGroupList] = useState([]);
-  // const [groupName, setGroupName] = useState("");
-  // const [groupMembers, setGroupMembers] = useState([]);
 
   useEffect(() => {
     // console.log("contact list is:", contactList);
@@ -70,28 +61,9 @@ const AddGroup = ({
     return unsubscribe;
   }, [navigation, contactList]);
 
-  // const getFriendFilter = (contactList) => {
-  //   const filteredUserMap = contactList.map((contact) => {
-  //     const filteredUser = contact.data.filter((arrayItem) => {
-  //       console.log("array itme");
-  //       console.log(arrayItem);
-  //       return arrayItem.user_exist == true;
-  //     });
-  //     return filteredUser;
-  //   });
-  //   // console.log("Filtered User");
-  //   // console.log(filteredUserMap);
-  // };
-
   const getFriendFilter = (contactList) => {
     const filteredUserMap = contactList.map((contact) => {
       const userExistArray = contact.data.filter((existUser) => {
-        // if (existUser.user_exist == true) {
-
-        //   return
-        //   console.log(contact.title);
-        //   console.log(contact.data);
-        // }
         return existUser.user_exist == true;
       });
 
@@ -99,8 +71,6 @@ const AddGroup = ({
         title: contact.title,
         data: userExistArray,
       };
-
-      // return contact.data;
     });
 
     const returnData = filteredUserMap.filter((userExist) => {
@@ -146,16 +116,6 @@ const AddGroup = ({
     }
   };
 
-  const handleAddContact = () => {
-    setAddScreenModelVisible(!addScreenModelVisible);
-  };
-
-  const handleAddContactSubmit = (text) => {};
-
-  function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-  }
-
   const handleSearch = (text) => {
     setKeyTyped(text);
     const contactListAfterFilter = getSearchArray(text, contactList);
@@ -177,74 +137,48 @@ const AddGroup = ({
   };
 
   const handleContactPress = async (contact) => {
-    const conversation_id = await getConversationIdAction(
-      currentUserId,
-      contact.contactId
-    );
+    console.log("inside handle contact press");
+    console.log("contact is", contact);
+    console.log("contact id is", contact.contactId);
 
-    clearMessagesAction();
-    getMessagesAction(currentUserId, contact.contactId);
+    if (contact.user_exist) {
+      const conversation_id = await getConversationIdAction(
+        currentUserId,
+        contact.contactId
+      );
 
-    navigation.navigate(
-      "MessageScreen",
-
-      {
+      clearMessagesAction();
+      getMessagesAction(currentUserId, contact.contactId);
+      navigation.navigate("MessageScreen", {
         currentUserId,
         contact,
         conversationId: conversation_id,
         name: contact.name.split(" ")[0],
         image: contact.profile_img_url,
         notification_token: contact.notification_token,
-      }
-    );
-  };
-
-  const addContactButton = () => {
-    navigation.navigate("Find Contact");
-  };
-
-  const handleCheckBoxChange = (contact) => {
-    if (!contact.checked) {
-      contact.checked = true;
-      setGroupList([...groupList, contact.contactId]);
-      // setGroupMembers([...groupMembers, contact.name]);
-    } else {
-      contact.checked = false;
-      const removedContactList = groupList.filter((state_contact) => {
-        return state_contact !== contact.contactId;
       });
-      setGroupList(removedContactList);
-      // const removedGroupMember = groupMembers.filter((state_contact_name) => {
-      //   return state_contact_name !== contact.name;
-      // });
-      // setGroupMembers(removedGroupMember);
+    } else {
+      console.log("user does not exist- do nothing");
     }
   };
-
-  console.log("contact group list is:", groupList);
-  // console.log("contact group name is:", groupMembers);
-
   const Item = ({ contact }) => {
     return (
-      <View style={styles.contactRow}>
-        {contact.user_exist && (
-          <CheckBox
-            title="Click Here"
-            checked={contact.checked ? true : false}
-            onPress={() => {
-              handleCheckBoxChange(contact);
-            }}
-            title=""
-          />
-        )}
-
-        {contact.user_exist && (
-          <View style={styles.image}>{imageJSX(contact.profile_img_url)}</View>
-        )}
-        <View style={styles.label}>
-          {contact.user_exist && <Text>{contact.name}</Text>}
+      <TouchableOpacity
+        onPress={() => {
+          handleContactPress(contact);
+        }}
+      >
+        <View style={styles.contactRow}>
+          {contact.user_exist && (
+            <View style={styles.image}>
+              {imageJSX(contact.profile_img_url)}
+            </View>
+          )}
+          <View style={styles.label}>
+            {contact.user_exist && <Text>{contact.name}</Text>}
+          </View>
         </View>
-      </View>
+      </TouchableOpacity>
     );
   };
 
@@ -275,55 +209,11 @@ const AddGroup = ({
           <Text style={styles.noFoundText}>
             You do not have any friends yet...
           </Text>
-          <TouchableOpacity onPress={addContactButton}>
-            <Text style={styles.addContactButton}>Add a Friend</Text>
-          </TouchableOpacity>
         </View>
       );
     }
   };
 
-  const createGroup = async (groupName) => {
-    const id = await AddContactsToGroup(currentUserId, groupList, groupName);
-
-    clearGroupMessagesAction();
-    navigation.navigate("GroupMessageScreen", {
-      groupId: id,
-      groupName: groupName,
-    });
-    localContactList.map((contact) => {
-      contact.data.map((item) => {
-        item.checked = false;
-      });
-    });
-  };
-
-  const handleDone = (modalVisible, setModalVisible) => {
-    return (
-      <DialogInput
-        isDialogVisible={modalVisible}
-        title={"Group Name: "}
-        initValueTextInput={""}
-        submitInput={(inputText) => {
-          // setGroupName(inputText);
-          setModalVisible(false);
-          createGroup(inputText);
-        }}
-        closeDialog={() => {
-          setModalVisible(false);
-        }}
-      ></DialogInput>
-    );
-  };
-
-  const handleCancel = async () => {
-    navigation.navigate("Recent Conversation");
-    localContactList.map((contact) => {
-      contact.data.map((item) => {
-        item.checked = false;
-      });
-    });
-  };
   return (
     <SafeAreaView style={styles.safeAreaWrapper}>
       <View style={styles.screenWrapper}>
@@ -333,22 +223,7 @@ const AddGroup = ({
             placeholderTitle="Search Contacts"
           />
         </View>
-        <View style={styles.buttonWrapper}>
-          {handleDone(modalVisible, setModalVisible)}
-          <TouchableOpacity
-            onPress={() => {
-              {
-                setModalVisible(true);
-              }
-            }}
-            style={styles.button}
-          >
-            <Text style={{ fontSize: 18, color: "#ffffff" }}>Create Group</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={handleCancel} style={styles.button}>
-            <Text style={{ fontSize: 18, color: "#ffffff" }}>Cancel</Text>
-          </TouchableOpacity>
-        </View>
+
         <View>{sectionJSX()}</View>
       </View>
     </SafeAreaView>
@@ -365,7 +240,6 @@ const mapDispatchToProps = {
   filterContactList: filterContactList,
   getMessagesAction: getMessagesAction,
   clearMessagesAction: clearMessagesAction,
-  clearGroupMessagesAction,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(AddGroup);
@@ -418,14 +292,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
     fontSize: 20,
   },
-  addContactButton: {
-    color: "#ffffff",
-    marginTop: 15,
-    fontSize: 15,
-    padding: 10,
-    backgroundColor: "#33F0C2",
-    borderRadius: 5,
-  },
+
   buttonWrapper: {
     width: "100%",
     alignSelf: "center",

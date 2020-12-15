@@ -114,7 +114,7 @@ const GroupConversationScreen = ({
     navigation.navigate("GroupMessageScreen", {
       currentUserId: userId,
       contact: contactObject,
-      name: item.name,
+      groupName: item.name,
       image: item.profile_img_url,
       groupId: item.id,
     });
@@ -218,9 +218,11 @@ const GroupConversationScreen = ({
                     {renderGroupImage(item.picture)}
 
                     <View style={styles.label}>
-                      {item.name && (
-                        <Text style={styles.msg_name}>{item.name}</Text>
-                      )}
+                      <Text>
+                        {item.name && (
+                          <Text style={styles.msg_name}>{item.name}</Text>
+                        )}
+                      </Text>
                     </View>
                   </View>
                 </TouchableOpacity>
