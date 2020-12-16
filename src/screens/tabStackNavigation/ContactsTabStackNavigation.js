@@ -13,6 +13,7 @@ import { connect } from "react-redux";
 
 import ContactScreenTab from "../tabScreens/contactTabScreens/ContactScreenTab";
 import ContactScreenTabFindContact from "../tabScreens/contactTabScreens/ContactScreenTabFindContact";
+import ProfileDialog from "../components/ProfileDialog";
 
 import AddContact from "../tabScreens/contactTabScreens/AddContact";
 import MessageScreen from "../tabScreens/chatTabScreens/messageScreen";
@@ -70,6 +71,26 @@ const ContactsTabStackNavigation = ({ navigation }) => {
         options={{
           title: "Create Contact",
         }}
+      />
+      <Stack.Screen
+        name="Friend Profile"
+        component={ProfileDialog}
+        // options={({ route, navigation }) => ({
+        //   // headerLeft: (props) => (
+        //   //   <HeaderBackButton navigation={navigation} {...props} />
+        //   // ),
+        //   // headerTitle: () => (
+        //   //   <View style={styles.headerTitle}>
+        //   //     <Image
+        //   //       style={styles.headerImage}
+        //   //       source={{
+        //   //         uri: route.params.image,
+        //   //       }}
+        //   //     />
+        //   //     <Text style={styles.headerText}>{route.params.name}</Text>
+        //   //   </View>
+        //   // ),
+        // })}
       />
       <Stack.Screen name="Add Contact" component={AddContact} options={{}} />
 

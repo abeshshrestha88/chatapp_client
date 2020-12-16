@@ -9,6 +9,8 @@ import {
   Image,
   SectionList,
   SafeAreaView,
+  Share,
+  Button,
   Modal,
 } from "react-native";
 import Search from "../../components/Search";
@@ -28,12 +30,11 @@ import {
   clearMessagesAction,
 } from "../../../redux/actions/messageAction";
 
-import SendInviteModal from "../../components/SendInviteModal";
-
 import _ from "lodash";
 import { CommonActions } from "@react-navigation/native";
 import { getConversationIdAction } from "../../../redux/actions/conversationAction";
 import { FontAwesome5 } from "@expo/vector-icons";
+import ProfileDialog from "../../components/ProfileDialog";
 const ContactScreenTab = ({
   route,
   navigation,
@@ -47,7 +48,6 @@ const ContactScreenTab = ({
   const [addScreenModelVisible, setAddScreenModelVisible] = useState(false);
   const [localContactList, setLocalContactList] = useState([]);
   const [keyTyped, setKeyTyped] = useState("");
-  const [sendInviteModalVisible, setSendInviteModalVisible] = useState(false);
 
   useEffect(() => {
     console.log("useEffect-contact list is:", contactList);
@@ -131,37 +131,61 @@ const ContactScreenTab = ({
       return <Image style={styles.profileLogo} source={{ uri: image }} />;
     }
   };
-
-  const handleContactPress = async (contact) => {
-    console.log("inside handle contact press");
-    console.log("contact is", contact);
-    console.log("contact id is", contact.contactId);
-
-    if (contact.user_exist) {
-      const conversation_id = await getConversationIdAction(
-        currentUserId,
-        contact.contactId
-      );
-
-      clearMessagesAction();
-      getMessagesAction(currentUserId, contact.contactId);
-      navigation.navigate("MessageScreen", {
-        currentUserId,
-        contact,
-        conversationId: conversation_id,
-        name: contact.name.split(" ")[0],
-        image: contact.profile_img_url,
-        notification_token: contact.notification_token,
+  const onShare = async () => {
+    try {
+      const result = await Share.share({
+        message: "Hello, Please download this awesome app",
       });
-    } else {
-      handleSendInviteModal();
-      console.log("user does not exist- do nothing");
+      if (result.action === Share.sharedAction) {
+        if (result.activityType) {
+          // shared with activity type of result.activityType
+        } else {
+          // shared
+        }
+      } else if (result.action === Share.dismissedAction) {
+        // dismissed
+      }
+    } catch (error) {
+      alert(error.message);
     }
   };
 
-  const handleSendInviteModal = () => {
-    setSendInviteModalVisible(!sendInviteModalVisible);
-    console.log("model clicked.....");
+  // const handleContactPress = async (contact) => {
+  //   console.log("inside handle contact press");
+  //   console.log("contact is", contact);
+  //   console.log("contact id is", contact.contactId);
+
+  //   if (contact.user_exist) {
+  //     const conversation_id = await getConversationIdAction(
+  //       currentUserId,
+  //       contact.contactId
+  //     );
+
+  //     clearMessagesAction();
+  //     getMessagesAction(currentUserId, contact.contactId);
+  //     navigation.navigate("MessageScreen", {
+  //       currentUserId,
+  //       contact,
+  //       conversationId: conversation_id,
+  //       name: contact.name.split(" ")[0],
+  //       image: contact.profile_img_url,
+  //       notification_token: contact.notification_token,
+  //     });
+  //   } else {
+  //     onShare();
+  //     // handleSendInviteModal();
+  //     // console.log("user does not exist- do nothing");
+  //   }
+  // };
+
+  const handleContactPressed = (contact) => {
+    navigation.navigate("Friend Profile", {
+      name: contact.name,
+      phone: contact.phone,
+      img: contact.profile_img_url,
+      exists: contact.user_exist,
+      contactId: contact.contactId,
+    });
   };
 
   const addContactButton = () => {
@@ -170,36 +194,34 @@ const ContactScreenTab = ({
 
   const Item = ({ contact }) => {
     return (
-      <TouchableOpacity
-        onPress={() => {
-          handleContactPress(contact);
-        }}
-      >
-        <View style={styles.contactRow}>
-          <View style={styles.image}>
-            {imageJSX(contact.profile_img_url, contact.name)}
+      <View>
+        <TouchableOpacity
+          onPress={() => {
+            handleContactPressed(contact);
+          }}
+        >
+          <View style={styles.contactRow}>
+            <View style={styles.image}>
+              {imageJSX(contact.profile_img_url, contact.name)}
+            </View>
+            <View style={styles.label}>
+              <Text>{contact.name}</Text>
+            </View>
+            {contact.user_exist && (
+              <>
+                <FontAwesome name="phone-square" size={24} color="black" />
+                <MaterialCommunityIcons
+                  name="tooltip-text"
+                  size={24}
+                  color="black"
+                />
+              </>
+            )}
           </View>
-          <View style={styles.label}>
-            <Text>{contact.name}</Text>
-          </View>
-          {contact.user_exist && (
-            <>
-              <FontAwesome name="phone-square" size={24} color="black" />
-              <MaterialCommunityIcons
-                name="tooltip-text"
-                size={24}
-                color="black"
-              />
-            </>
-          )}
+        </TouchableOpacity>
 
-          {!contact.user_exist && <Text style={styles.invite}>Invite</Text>}
-
-          {/* <View>
-            <Text>{contact.user_exist ? "true" : "false"}</Text>
-          </View> */}
-        </View>
-      </TouchableOpacity>
+        {!contact.user_exist && <Button onPress={onShare} title="Invite" />}
+      </View>
     );
   };
 
@@ -237,17 +259,6 @@ const ContactScreenTab = ({
         </View>
         <View>{sectionJSX()}</View>
       </View>
-
-      <Modal
-        animationType="slide"
-        transparent={true}
-        visible={sendInviteModalVisible}
-        onRequestClose={() => {
-          Alert.alert("Modal has been closed.");
-        }}
-      >
-        <SendInviteModal handleSendInviteModal={handleSendInviteModal} />
-      </Modal>
     </SafeAreaView>
   );
 };

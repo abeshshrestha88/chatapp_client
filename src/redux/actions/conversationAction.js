@@ -14,8 +14,6 @@ export const getConversationAction = (userId) => {
           params: { userId },
         }
       );
-
-      console.log("getconversationaction data is: ", res.data.conversationList);
       dispatch({ type: GET_CONVERSATION, payload: res.data.conversationList });
     } catch (error) {}
   };
