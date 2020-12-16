@@ -61,11 +61,8 @@ const ProfileDialog = ({
       currentUserId,
       params.contactId
     );
-
-    console.log("conv id is", conversation_id);
     clearMessagesAction();
     getMessagesAction(currentUserId, params.contactId);
-    console.log("paramsL", params);
     navigation.navigate("MessageScreen", {
       currentUserId,
       contact: params,
@@ -75,7 +72,7 @@ const ProfileDialog = ({
     });
   };
   const handleCallBtn = (name) => {
-    alert("Need to implement call");
+    alert("TODO");
   };
   const handleUserExists = (params) => {
     if (params.exists) {

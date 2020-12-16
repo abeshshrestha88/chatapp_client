@@ -150,33 +150,35 @@ const ContactScreenTab = ({
     }
   };
 
-  // const handleContactPress = async (contact) => {
-  //   console.log("inside handle contact press");
-  //   console.log("contact is", contact);
-  //   console.log("contact id is", contact.contactId);
+  const handleCallPress = () => {
+    alert("TODO");
+  };
 
-  //   if (contact.user_exist) {
-  //     const conversation_id = await getConversationIdAction(
-  //       currentUserId,
-  //       contact.contactId
-  //     );
+  const handleMessagePress = async (contact) => {
+    console.log("inside handle contact press");
+    console.log("contact is", contact);
+    console.log("contact id is", contact.contactId);
 
-  //     clearMessagesAction();
-  //     getMessagesAction(currentUserId, contact.contactId);
-  //     navigation.navigate("MessageScreen", {
-  //       currentUserId,
-  //       contact,
-  //       conversationId: conversation_id,
-  //       name: contact.name.split(" ")[0],
-  //       image: contact.profile_img_url,
-  //       notification_token: contact.notification_token,
-  //     });
-  //   } else {
-  //     onShare();
-  //     // handleSendInviteModal();
-  //     // console.log("user does not exist- do nothing");
-  //   }
-  // };
+    if (contact.user_exist) {
+      const conversation_id = await getConversationIdAction(
+        currentUserId,
+        contact.contactId
+      );
+
+      clearMessagesAction();
+      getMessagesAction(currentUserId, contact.contactId);
+      navigation.navigate("MessageScreen", {
+        currentUserId,
+        contact,
+        conversationId: conversation_id,
+        name: contact.name.split(" ")[0],
+        image: contact.profile_img_url,
+        notification_token: contact.notification_token,
+      });
+    } else {
+      onShare();
+    }
+  };
 
   const handleContactPressed = (contact) => {
     navigation.navigate("Friend Profile", {
@@ -209,12 +211,24 @@ const ContactScreenTab = ({
             </View>
             {contact.user_exist && (
               <>
-                <FontAwesome name="phone-square" size={24} color="black" />
-                <MaterialCommunityIcons
-                  name="tooltip-text"
-                  size={24}
-                  color="black"
-                />
+                <TouchableOpacity
+                  onPress={() => {
+                    handleCallPress();
+                  }}
+                >
+                  <FontAwesome name="phone-square" size={24} color="black" />
+                </TouchableOpacity>
+                <TouchableOpacity
+                  onPress={() => {
+                    handleMessagePress(contact);
+                  }}
+                >
+                  <MaterialCommunityIcons
+                    name="tooltip-text"
+                    size={24}
+                    color="black"
+                  />
+                </TouchableOpacity>
               </>
             )}
           </View>
