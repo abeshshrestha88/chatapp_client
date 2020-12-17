@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { connect } from "react-redux";
-import { View, Text } from "react-native";
+import { View, Text, Clipboard } from "react-native";
 import { GiftedChat } from "react-native-gifted-chat";
 
-import { sendMessage } from "../../../redux/actions/messageAction";
+import {
+  sendMessage,
+  unsendMessagesAction,
+} from "../../../redux/actions/messageAction";
 import { sendPushNotification } from "../../../helpers/functions";
 import { setNotificationConversationIdAction } from "../../../redux/actions/pushNotificationAction";
 
@@ -17,6 +20,7 @@ const messageScreen = ({
   expoPushToken,
   name,
   setNotificationConversationIdAction,
+  unsendMessagesAction,
 }) => {
   useEffect(() => {
     console.log("conversation param id is: ", route.params.conversationId);
@@ -34,6 +38,61 @@ const messageScreen = ({
   // console.log("token in send is");
   // console.log(expoPushToken);
 
+  const onLongPress = (ctx, currentMessage) => {
+    console.log("current message is", currentMessage.user._id);
+    console.log("current user is", currentUserId);
+
+    if (currentUserId === currentMessage.user._id) {
+      const options = ["Copy", "Unsend", "Delete", "Cancel"];
+      const cancelButtonIndex = options.length - 1;
+      ctx.actionSheet().showActionSheetWithOptions(
+        {
+          options,
+          cancelButtonIndex,
+        },
+        (buttonIndex) => {
+          switch (buttonIndex) {
+            case 0:
+              Clipboard.setString(currentMessage.text);
+              break;
+            case 1:
+              unsendMessagesAction(
+                currentMessage._id,
+                currentMessage.conversation_id
+              );
+              break;
+            case 2:
+              alert("delete");
+              break;
+            default:
+              break;
+          }
+        }
+      );
+    } else {
+      const options = ["Copy", "Delete", "Cancel"];
+      const cancelButtonIndex = options.length - 1;
+      ctx.actionSheet().showActionSheetWithOptions(
+        {
+          options,
+          cancelButtonIndex,
+        },
+        (buttonIndex) => {
+          switch (buttonIndex) {
+            case 0:
+              Clipboard.setString(currentMessage.text);
+              break;
+
+            case 1:
+              alert("delete");
+              break;
+            default:
+              break;
+          }
+        }
+      );
+    }
+  };
   function onSend(newMessage = []) {
     // sendPushNotification({
     //   to: notification_token,
@@ -76,6 +135,7 @@ const messageScreen = ({
       messages={messages}
       onSend={(messages) => onSend(messages)}
       renderUsernameOnMessage
+      onLongPress={(ctx, message) => onLongPress(ctx, message)}
       user={{
         _id: currentUserId,
         name: name,
@@ -94,6 +154,7 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = {
   sendMessage,
   setNotificationConversationIdAction,
+  unsendMessagesAction,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(messageScreen);
