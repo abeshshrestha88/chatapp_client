@@ -22,26 +22,27 @@ const messageScreen = ({
   setNotificationConversationIdAction,
   unsendMessagesAction,
 }) => {
+  const [messageList, setMessageList] = useState([]);
   useEffect(() => {
-    console.log("conversation param id is: ", route.params.conversationId);
+    setMessageList(messages);
 
     // setNotificationConversationIdAction(route.params.conversationId);
-  }, []);
+  }, [messages]);
 
   const conversationId = route.params.conversationId;
-  messages = messages.filter((msg) => msg.conversation_id === conversationId);
+
+  //Check later
+  // messages = messages.filter((msg) => msg.conversation_id === conversationId);
 
   const contact = route.params.contact;
   const currentUserId = route.params.currentUserId;
-  // const notification_token = route.params.notification_token;
 
-  // console.log("token in send is");
-  // console.log(expoPushToken);
-
+  const message_unsend = (msg_id, conversation_id) => {
+    unsendMessagesAction(msg_id, conversation_id);
+    const removeMessage = messageList.filter((msg) => msg._id !== msg_id);
+    setMessageList(removeMessage);
+  };
   const onLongPress = (ctx, currentMessage) => {
-    console.log("current message is", currentMessage.user._id);
-    console.log("current user is", currentUserId);
-
     if (currentUserId === currentMessage.user._id) {
       const options = ["Copy", "Unsend", "Delete", "Cancel"];
       const cancelButtonIndex = options.length - 1;
@@ -56,10 +57,11 @@ const messageScreen = ({
               Clipboard.setString(currentMessage.text);
               break;
             case 1:
-              unsendMessagesAction(
+              message_unsend(
                 currentMessage._id,
                 currentMessage.conversation_id
               );
+
               break;
             case 2:
               alert("delete");
@@ -132,7 +134,7 @@ const messageScreen = ({
 
   return (
     <GiftedChat
-      messages={messages}
+      messages={messageList}
       onSend={(messages) => onSend(messages)}
       renderUsernameOnMessage
       onLongPress={(ctx, message) => onLongPress(ctx, message)}
